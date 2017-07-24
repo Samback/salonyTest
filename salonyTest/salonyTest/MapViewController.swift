@@ -24,11 +24,12 @@ final class MapViewController: ParentViewController {
     }
     
     private func configMap() {
-        let defaultPosition = GMSCameraPosition.camera(withLatitude: 29.364813, longitude: 47.982395, zoom: 18.0)
+        let defaultPosition = GMSCameraPosition.camera(withLatitude: 29.364813, longitude: 47.982395, zoom: 20.0)
         mapView = GMSMapView()
         mapView.animate(to: defaultPosition)
-        mapContainer.addSubview(mapView)
+        mapContainer.insertSubview(mapView, at: 0)
         mapView.alignAllEdges(to: mapContainer)
+        mapView.delegate = self
     }
     
     private func configUI() {
@@ -36,10 +37,16 @@ final class MapViewController: ParentViewController {
     }
 }
 
+extension MapViewController: GMSMapViewDelegate {
+    public func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        print("Center \(position.target)")
+    }
+}
+
 extension MapViewController {
     class func instantiate() -> MapViewController {
         guard let mapView = R.storyboard.main.mapViewController() else {
-            fatalError("Something really bed with instantiating of view controller MapViewController")
+            fatalError("Something really bad with instantiating of view controller MapViewController")
         }
         
         return mapView
