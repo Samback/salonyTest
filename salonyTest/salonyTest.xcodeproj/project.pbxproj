@@ -28,6 +28,8 @@
 		D250D6FF1F26998500C3E2AE /* GMSCameraPosition+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6FE1F26998500C3E2AE /* GMSCameraPosition+extension.swift */; };
 		D250D7011F2699CB00C3E2AE /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7001F2699CB00C3E2AE /* Messages.swift */; };
 		D250D7041F269B3000C3E2AE /* AddNewAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */; };
+		D250D7061F269D1200C3E2AE /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7051F269D1200C3E2AE /* GoogleMapViewController.swift */; };
+		D250D7081F26A15D00C3E2AE /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7071F26A15D00C3E2AE /* UIViewController+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		D250D6FE1F26998500C3E2AE /* GMSCameraPosition+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GMSCameraPosition+extension.swift"; sourceTree = "<group>"; };
 		D250D7001F2699CB00C3E2AE /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewAddressViewController.swift; sourceTree = "<group>"; };
+		D250D7051F269D1200C3E2AE /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
+		D250D7071F26A15D00C3E2AE /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				D250D6F71F262FF100C3E2AE /* LocationView.swift */,
 				D250D6F91F263AE200C3E2AE /* AddButton.swift */,
 				D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */,
+				D250D7051F269D1200C3E2AE /* GoogleMapViewController.swift */,
+				D250D7071F26A15D00C3E2AE /* UIViewController+extension.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -353,12 +359,14 @@
 			files = (
 				D250D6F41F261F0700C3E2AE /* UIView+extension.swift in Sources */,
 				D250D6FC1F268D6500C3E2AE /* AddButtonView.swift in Sources */,
+				D250D7081F26A15D00C3E2AE /* UIViewController+extension.swift in Sources */,
 				D21C6FE51F25F5520033E363 /* Font.swift in Sources */,
 				D250D6EA1F26162300C3E2AE /* MapViewController.swift in Sources */,
 				D250D6FA1F263AE200C3E2AE /* AddButton.swift in Sources */,
 				D21C6FCE1F25EDBE0033E363 /* AppDelegate.swift in Sources */,
 				D250D6F21F261DE000C3E2AE /* Credentials.swift in Sources */,
 				D250D7011F2699CB00C3E2AE /* Messages.swift in Sources */,
+				D250D7061F269D1200C3E2AE /* GoogleMapViewController.swift in Sources */,
 				D250D6EE1F2616C900C3E2AE /* PresentMapViewControllerAction.swift in Sources */,
 				D250D6F81F262FF100C3E2AE /* LocationView.swift in Sources */,
 				D250D6EC1F26164000C3E2AE /* ViewController.swift in Sources */,
