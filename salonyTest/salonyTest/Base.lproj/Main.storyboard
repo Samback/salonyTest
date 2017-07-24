@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MapViewController" customModule="salonyTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,11 +20,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bz2-0W-mXM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="587"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="QEf-8i-E8U" customClass="pin">
+                                        <rect key="frame" x="167.5" y="263.5" width="40" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QEf-8i-E8U" firstAttribute="centerX" secondItem="bz2-0W-mXM" secondAttribute="centerX" id="nAW-6m-AQi"/>
+                                    <constraint firstItem="QEf-8i-E8U" firstAttribute="centerY" secondItem="bz2-0W-mXM" secondAttribute="centerY" id="x81-us-FrM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-2w-Y9f" userLabel="Bottom Container" customClass="LocationView" customModule="salonyTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hqg-2y-skd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bz2-0W-mXM" secondAttribute="trailing" id="Bjf-vW-AG3"/>
+                            <constraint firstItem="bz2-0W-mXM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gkx-Rd-73V"/>
+                            <constraint firstAttribute="trailing" secondItem="B9e-2w-Y9f" secondAttribute="trailing" id="Y27-RQ-8o0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B9e-2w-Y9f" secondAttribute="bottom" id="chz-8a-O8k"/>
+                            <constraint firstItem="B9e-2w-Y9f" firstAttribute="top" secondItem="bz2-0W-mXM" secondAttribute="bottom" id="eTD-dM-GI1"/>
+                            <constraint firstItem="bz2-0W-mXM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hpY-4u-Xfp"/>
+                            <constraint firstItem="B9e-2w-Y9f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iAp-1S-0oc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationView" destination="B9e-2w-Y9f" id="8pC-rx-W9X"/>
+                        <outlet property="mapContainer" destination="bz2-0W-mXM" id="IAY-eV-617"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="pin" width="40" height="60"/>
+    </resources>
 </document>

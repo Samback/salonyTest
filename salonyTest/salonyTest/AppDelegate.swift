@@ -7,14 +7,25 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        guard let window = window else {
+            return false
+        }
+        
+        guard GMSServices.provideAPIKey(Credentials.googleMaps) else {
+            fatalError("Can't to register maps")
+        }
+        
+        AppearanceController().apply()
+        PresentMapViewControllerAction().execute(at: window)
+        
         return true
     }
 

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationView" customModule="salonyTest" customModuleProvider="target">
+            <connections>
+                <outlet property="addButtonView" destination="uM4-3b-xC3" id="pre-c1-ffs"/>
+                <outlet property="address" destination="TQg-t9-Yc9" id="Waj-Y2-J7M"/>
+                <outlet property="city" destination="DGI-Rz-Eak" id="GJT-3f-nSP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_location_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cdY-bN-4zo">
+                    <rect key="frame" x="26" y="18.5" width="16" height="23"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQg-t9-Yc9">
+                    <rect key="frame" x="60" y="16" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGI-Rz-Eak">
+                    <rect key="frame" x="60" y="22.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uM4-3b-xC3" customClass="AddButtonView" customModule="salonyTest" customModuleProvider="target">
+                    <rect key="frame" x="277" y="14.5" width="83" height="31"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="4UU-S8-i0r"/>
+                        <constraint firstAttribute="width" constant="83" id="xK7-hU-Vyo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99607843139999996" green="0.70588235290000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uM4-3b-xC3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DGI-Rz-Eak" secondAttribute="trailing" constant="8" id="2nY-2h-Aeb"/>
+                <constraint firstItem="cdY-bN-4zo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="6VB-0S-AwW"/>
+                <constraint firstAttribute="trailing" secondItem="uM4-3b-xC3" secondAttribute="trailing" constant="15" id="Pc5-YQ-L6y"/>
+                <constraint firstItem="TQg-t9-Yc9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="VAv-St-MLN"/>
+                <constraint firstItem="TQg-t9-Yc9" firstAttribute="leading" secondItem="cdY-bN-4zo" secondAttribute="trailing" constant="18" id="YAw-Rw-HM0"/>
+                <constraint firstItem="cdY-bN-4zo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gIs-xw-pgX"/>
+                <constraint firstItem="uM4-3b-xC3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rzS-Xp-cuz"/>
+                <constraint firstItem="DGI-Rz-Eak" firstAttribute="leading" secondItem="TQg-t9-Yc9" secondAttribute="leading" id="vxa-aB-r2B"/>
+                <constraint firstItem="uM4-3b-xC3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TQg-t9-Yc9" secondAttribute="trailing" constant="8" id="xHF-35-18N"/>
+                <constraint firstItem="DGI-Rz-Eak" firstAttribute="bottom" secondItem="cdY-bN-4zo" secondAttribute="bottom" constant="2" id="yG7-CL-ZmF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-92.5" y="-290"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pin_location_icon" width="16" height="23"/>
+    </resources>
+</document>

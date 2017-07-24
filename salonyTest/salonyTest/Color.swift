@@ -31,7 +31,11 @@ extension Color {
     //Green color
     static var rgd30158149: UIColor {
         return color(30, green: 158, blue: 149, alpha: 1.0)
-    }    
+    }
+    
+    static var rgb255: UIColor {
+        return .white
+    }
     
     //Color convertor
     static func color(_ red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {

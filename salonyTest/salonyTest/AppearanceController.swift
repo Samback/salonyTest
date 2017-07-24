@@ -12,21 +12,21 @@ import Rswift
 
 struct AppearanceController {
     func apply() {
-        
+        applyAppearanceForNavigationBar()
     }
     
     private func applyAppearanceForNavigationBar() {
-        self.configurebackButton()
-        self.configureTitle()
+        configurebackButton()
+        configureTitle()
     }
     
     private func configureTitle() {
         let navigationBar = UINavigationBar.appearance()
-        navigationBar.barTintColor = Color.rgb1583098
-        navigationBar.tintColor = .white
+        navigationBar.barTintColor = .white
+        navigationBar.tintColor = .black
         
-        let font = Font.regularFont(size: .p18)
-        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white,
+        let font = Font.regularFont(size: .p17)
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color.black,
                                              NSFontAttributeName: font]
         
         let img = UIImage()
@@ -40,5 +40,4 @@ struct AppearanceController {
         navigationBar.backIndicatorTransitionMaskImage = image
         navigationBar.backIndicatorImage = image
     }
-
 }

@@ -33,6 +33,10 @@ extension Font {
         case p42 = 42.0
     }
     
+    public static func boldFont(size: FontSize) -> UIFont {
+        return UIFont.boldSystemFont(ofSize: size.rawValue)
+    }
+    
     public static func regularFont(size: FontSize) -> UIFont {
         return UIFont.systemFont(ofSize: size.rawValue)
     }    
