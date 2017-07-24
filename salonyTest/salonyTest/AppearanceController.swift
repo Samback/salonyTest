@@ -15,7 +15,6 @@ struct AppearanceController {
         
     }
     
-    
     private func applyAppearanceForNavigationBar() {
         self.configurebackButton()
         self.configureTitle()
@@ -27,7 +26,7 @@ struct AppearanceController {
         navigationBar.tintColor = .white
         
         let font = Font.regularFont(size: .p18)
-        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white,
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white,
                                              NSFontAttributeName: font]
         
         let img = UIImage()

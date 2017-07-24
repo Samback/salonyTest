@@ -122,6 +122,7 @@
 			buildConfigurationList = D21C6FDC1F25EDBE0033E363 /* Build configuration list for PBXNativeTarget "salonyTest" */;
 			buildPhases = (
 				D21C6FE61F260D060033E363 /* ShellScript */,
+				D250D6E61F26152B00C3E2AE /* ShellScript */,
 				5D515DCC345224A4C25482AD /* [CP] Check Pods Manifest.lock */,
 				D21C6FC61F25EDBE0033E363 /* Sources */,
 				D21C6FC71F25EDBE0033E363 /* Frameworks */,
@@ -244,6 +245,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
+		D250D6E61F26152B00C3E2AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

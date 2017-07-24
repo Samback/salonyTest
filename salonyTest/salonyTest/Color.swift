@@ -14,7 +14,6 @@ private let n: CGFloat = 255.0
 
 extension Color {
     
-   
     static var rgb1583098: UIColor {
         return color(158, green: 30, blue: 98, alpha: 1.0)
     }

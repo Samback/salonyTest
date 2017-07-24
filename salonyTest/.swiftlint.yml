@@ -1,0 +1,35 @@
+# This is configuration file for SwitLint.
+# https://github.com/realm/SwiftLint
+
+excluded:
+  - Pods
+  - R.generated.swift
+
+disabled_rules:
+  - leading_whitespace
+  - trailing_whitespace
+  - valid_docs
+  - force_cast
+  - variable_name
+  - variable_name_min_length
+  - type_name
+  
+line_length: 120
+
+type_body_length:
+  - 250 # warning
+  - 300 # error
+
+function_parameter_count:
+ - 10 # warning
+
+function_body_length:
+  - 30 # warning
+  - 40 # error
+  
+file_length:
+  - 300 # warning
+  - 350 # error
+   
+
+  
