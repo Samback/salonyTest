@@ -16,6 +16,9 @@
 		D21C6FE31F25EF300033E363 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C6FE21F25EF300033E363 /* Color.swift */; };
 		D21C6FE51F25F5520033E363 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C6FE41F25F5520033E363 /* Font.swift */; };
 		D21C6FE91F260D760033E363 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C6FE81F260D760033E363 /* R.generated.swift */; };
+		D250D6EA1F26162300C3E2AE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6E91F26162300C3E2AE /* MapViewController.swift */; };
+		D250D6EC1F26164000C3E2AE /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6EB1F26164000C3E2AE /* ParentViewController.swift */; };
+		D250D6EE1F2616C900C3E2AE /* PresentMapViewControllerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6ED1F2616C900C3E2AE /* PresentMapViewControllerAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		D21C6FE21F25EF300033E363 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D21C6FE41F25F5520033E363 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		D21C6FE81F260D760033E363 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		D250D6E91F26162300C3E2AE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D250D6EB1F26164000C3E2AE /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		D250D6ED1F2616C900C3E2AE /* PresentMapViewControllerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMapViewControllerAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D21C6FE11F25EEEB0033E363 /* UI */,
+				D250D6E71F26160400C3E2AE /* App */,
 				D21C6FCD1F25EDBE0033E363 /* AppDelegate.swift */,
 				D21C6FD11F25EDBE0033E363 /* Main.storyboard */,
 				D21C6FD61F25EDBE0033E363 /* LaunchScreen.storyboard */,
@@ -100,6 +107,7 @@
 				D21C6FDF1F25EEE50033E363 /* AppearanceController.swift */,
 				D21C6FE21F25EF300033E363 /* Color.swift */,
 				D21C6FE41F25F5520033E363 /* Font.swift */,
+				D250D6EB1F26164000C3E2AE /* ParentViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -112,6 +120,31 @@
 			);
 			name = Resources;
 			path = salonyTest;
+			sourceTree = "<group>";
+		};
+		D250D6E71F26160400C3E2AE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D250D6EF1F2616D100C3E2AE /* Actions */,
+				D250D6E81F26161100C3E2AE /* MapScreen */,
+				D250D6ED1F2616C900C3E2AE /* PresentMapViewControllerAction.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		D250D6E81F26161100C3E2AE /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D250D6E91F26162300C3E2AE /* MapViewController.swift */,
+			);
+			name = MapScreen;
+			sourceTree = "<group>";
+		};
+		D250D6EF1F2616D100C3E2AE /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D21C6FE51F25F5520033E363 /* Font.swift in Sources */,
+				D250D6EA1F26162300C3E2AE /* MapViewController.swift in Sources */,
 				D21C6FCE1F25EDBE0033E363 /* AppDelegate.swift in Sources */,
+				D250D6EE1F2616C900C3E2AE /* PresentMapViewControllerAction.swift in Sources */,
+				D250D6EC1F26164000C3E2AE /* ParentViewController.swift in Sources */,
 				D21C6FE91F260D760033E363 /* R.generated.swift in Sources */,
 				D21C6FE01F25EEE50033E363 /* AppearanceController.swift in Sources */,
 				D21C6FE31F25EF300033E363 /* Color.swift in Sources */,
