@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationView" customModule="salonyTest" customModuleProvider="target">
             <connections>
+                <outlet property="addButtonView" destination="uM4-3b-xC3" id="pre-c1-ffs"/>
                 <outlet property="address" destination="TQg-t9-Yc9" id="Waj-Y2-J7M"/>
                 <outlet property="city" destination="DGI-Rz-Eak" id="GJT-3f-nSP"/>
             </connections>
@@ -35,26 +36,26 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUi-na-VVg">
-                    <rect key="frame" x="277" y="15" width="83" height="31"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uM4-3b-xC3" customClass="AddButtonView" customModule="salonyTest" customModuleProvider="target">
+                    <rect key="frame" x="277" y="14.5" width="83" height="31"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="83" id="JBQ-6z-ZLi"/>
-                        <constraint firstAttribute="height" constant="31" id="uRZ-R1-er8"/>
+                        <constraint firstAttribute="height" constant="31" id="4UU-S8-i0r"/>
+                        <constraint firstAttribute="width" constant="83" id="xK7-hU-Vyo"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                </button>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.99607843139999996" green="0.70588235290000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="uM4-3b-xC3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DGI-Rz-Eak" secondAttribute="trailing" constant="8" id="2nY-2h-Aeb"/>
                 <constraint firstItem="cdY-bN-4zo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="6VB-0S-AwW"/>
-                <constraint firstItem="iUi-na-VVg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8ZO-7W-unA"/>
+                <constraint firstAttribute="trailing" secondItem="uM4-3b-xC3" secondAttribute="trailing" constant="15" id="Pc5-YQ-L6y"/>
                 <constraint firstItem="TQg-t9-Yc9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="VAv-St-MLN"/>
                 <constraint firstItem="TQg-t9-Yc9" firstAttribute="leading" secondItem="cdY-bN-4zo" secondAttribute="trailing" constant="18" id="YAw-Rw-HM0"/>
-                <constraint firstItem="iUi-na-VVg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DGI-Rz-Eak" secondAttribute="trailing" constant="8" id="bei-fd-gQw"/>
                 <constraint firstItem="cdY-bN-4zo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gIs-xw-pgX"/>
-                <constraint firstItem="iUi-na-VVg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TQg-t9-Yc9" secondAttribute="trailing" constant="8" id="s5K-VK-7by"/>
-                <constraint firstAttribute="trailing" secondItem="iUi-na-VVg" secondAttribute="trailing" constant="15" id="tx6-fm-gqh"/>
+                <constraint firstItem="uM4-3b-xC3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rzS-Xp-cuz"/>
                 <constraint firstItem="DGI-Rz-Eak" firstAttribute="leading" secondItem="TQg-t9-Yc9" secondAttribute="leading" id="vxa-aB-r2B"/>
+                <constraint firstItem="uM4-3b-xC3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TQg-t9-Yc9" secondAttribute="trailing" constant="8" id="xHF-35-18N"/>
                 <constraint firstItem="DGI-Rz-Eak" firstAttribute="bottom" secondItem="cdY-bN-4zo" secondAttribute="bottom" constant="2" id="yG7-CL-ZmF"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

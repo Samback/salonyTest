@@ -23,6 +23,8 @@
 		D250D6F41F261F0700C3E2AE /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6F31F261F0700C3E2AE /* UIView+extension.swift */; };
 		D250D6F61F262BC700C3E2AE /* LocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D250D6F51F262BC700C3E2AE /* LocationView.xib */; };
 		D250D6F81F262FF100C3E2AE /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6F71F262FF100C3E2AE /* LocationView.swift */; };
+		D250D6FA1F263AE200C3E2AE /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6F91F263AE200C3E2AE /* AddButton.swift */; };
+		D250D6FC1F268D6500C3E2AE /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		D250D6F31F261F0700C3E2AE /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		D250D6F51F262BC700C3E2AE /* LocationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationView.xib; sourceTree = "<group>"; };
 		D250D6F71F262FF100C3E2AE /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		D250D6F91F263AE200C3E2AE /* AddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				D250D6EB1F26164000C3E2AE /* ParentViewController.swift */,
 				D250D6F31F261F0700C3E2AE /* UIView+extension.swift */,
 				D250D6F71F262FF100C3E2AE /* LocationView.swift */,
+				D250D6F91F263AE200C3E2AE /* AddButton.swift */,
+				D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -321,8 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D250D6F41F261F0700C3E2AE /* UIView+extension.swift in Sources */,
+				D250D6FC1F268D6500C3E2AE /* AddButtonView.swift in Sources */,
 				D21C6FE51F25F5520033E363 /* Font.swift in Sources */,
 				D250D6EA1F26162300C3E2AE /* MapViewController.swift in Sources */,
+				D250D6FA1F263AE200C3E2AE /* AddButton.swift in Sources */,
 				D21C6FCE1F25EDBE0033E363 /* AppDelegate.swift in Sources */,
 				D250D6F21F261DE000C3E2AE /* Credentials.swift in Sources */,
 				D250D6EE1F2616C900C3E2AE /* PresentMapViewControllerAction.swift in Sources */,

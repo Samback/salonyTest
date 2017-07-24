@@ -13,6 +13,7 @@ import Rswift
 class LocationView: UIView {
     @IBOutlet fileprivate weak var address: UILabel!
     @IBOutlet fileprivate weak var city: UILabel!
+    @IBOutlet fileprivate weak var addButtonView: AddButtonView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,7 +34,9 @@ class LocationView: UIView {
         view.alignAllEdges(to: self)
         
         configLabelsUI()
-        
+        addButtonView.tapAction = {
+            print("Let's open")
+        }
     }
     
     private func configLabelsUI() {
@@ -42,7 +45,7 @@ class LocationView: UIView {
         city.font = Font.regularFont(size: .p12)
         city.textColor = .rgb255
         
-        address.text = "Jobova street"
-        city.text = "Kuwait"
+        address.text = "..."
+        city.text = "..."
     }
 }
