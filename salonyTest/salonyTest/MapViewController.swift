@@ -11,7 +11,7 @@ import UIKit
 import Rswift
 import GoogleMaps
 
-final class MapViewController: ParentViewController {
+final class MapViewController: ViewController {
     
     @IBOutlet weak var mapContainer: UIView!
     fileprivate var mapView: GMSMapView!
@@ -24,16 +24,15 @@ final class MapViewController: ParentViewController {
     }
     
     private func configMap() {
-        let defaultPosition = GMSCameraPosition.camera(withLatitude: 29.364813, longitude: 47.982395, zoom: 20.0)
         mapView = GMSMapView()
-        mapView.animate(to: defaultPosition)
+        mapView.animate(to: .defaultPosition)
         mapContainer.insertSubview(mapView, at: 0)
         mapView.alignAllEdges(to: mapContainer)
         mapView.delegate = self
     }
     
     private func configUI() {
-        title = "My Address"
+        title = Messages.title.myAddress
     }
 }
 
@@ -46,7 +45,7 @@ extension MapViewController: GMSMapViewDelegate {
 extension MapViewController {
     class func instantiate() -> MapViewController {
         guard let mapView = R.storyboard.main.mapViewController() else {
-            fatalError("Something really bad with instantiating of view controller MapViewController")
+            fatalError(Messages.error.mapViewController)
         }
         
         return mapView

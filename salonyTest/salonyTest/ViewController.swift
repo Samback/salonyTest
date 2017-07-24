@@ -1,5 +1,5 @@
 //
-//  ParentViewController.swift
+//  ViewController.swift
 //  salonyTest
 //
 //  Created by Max Tymchii on 7/24/17.
@@ -9,5 +9,5 @@
 import Foundation
 import UIKit
 
-class ParentViewController: UIViewController {
+class ViewController: UIViewController {
 }
