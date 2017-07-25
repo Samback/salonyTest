@@ -7,4 +7,6 @@ pod 'R.swift'
 pod 'SwiftLint'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
+pod 'IQKeyboardManagerSwift'
+pod 'JVFloatLabeledTextField'
 end
