@@ -35,6 +35,8 @@
 		D252E7E41F27406B00CE90DD /* Completions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E31F27406B00CE90DD /* Completions.swift */; };
 		D252E7E61F27438200CE90DD /* CustomLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E51F27438200CE90DD /* CustomLocationViewController.swift */; };
 		D252E7E81F2763D700CE90DD /* AddressInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E71F2763D700CE90DD /* AddressInfoViewController.swift */; };
+		D252E7EA1F27917500CE90DD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E91F27917500CE90DD /* TextField.swift */; };
+		D252E7EF1F27971700CE90DD /* TextFieldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7EE1F27971700CE90DD /* TextFieldInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,9 @@
 		D252E7E31F27406B00CE90DD /* Completions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Completions.swift; sourceTree = "<group>"; };
 		D252E7E51F27438200CE90DD /* CustomLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLocationViewController.swift; sourceTree = "<group>"; };
 		D252E7E71F2763D700CE90DD /* AddressInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInfoViewController.swift; sourceTree = "<group>"; };
+		D252E7E91F27917500CE90DD /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		D252E7EB1F27920D00CE90DD /* salonyTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "salonyTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		D252E7EE1F27971700CE90DD /* TextFieldInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +154,7 @@
 				D250D6F91F263AE200C3E2AE /* AddButton.swift */,
 				D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */,
 				D250D7071F26A15D00C3E2AE /* UIViewController+extension.swift */,
+				D252E7E91F27917500CE90DD /* TextField.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 				D250D6F51F262BC700C3E2AE /* LocationView.xib */,
 				D21C6FD41F25EDBE0033E363 /* Assets.xcassets */,
 				D21C6FE81F260D760033E363 /* R.generated.swift */,
+				D252E7EB1F27920D00CE90DD /* salonyTest-Bridging-Header.h */,
 			);
 			name = Resources;
 			path = salonyTest;
@@ -213,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */,
+				D252E7EE1F27971700CE90DD /* TextFieldInfo.swift */,
 			);
 			name = AddNewAddress;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 					D21C6FC91F25EDBE0033E363 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2AUX883V6A;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -391,9 +400,11 @@
 				D250D6F41F261F0700C3E2AE /* UIView+extension.swift in Sources */,
 				D250D6FC1F268D6500C3E2AE /* AddButtonView.swift in Sources */,
 				D252E7E61F27438200CE90DD /* CustomLocationViewController.swift in Sources */,
+				D252E7EA1F27917500CE90DD /* TextField.swift in Sources */,
 				D250D7081F26A15D00C3E2AE /* UIViewController+extension.swift in Sources */,
 				D21C6FE51F25F5520033E363 /* Font.swift in Sources */,
 				D250D6EA1F26162300C3E2AE /* MapViewController.swift in Sources */,
+				D252E7EF1F27971700CE90DD /* TextFieldInfo.swift in Sources */,
 				D250D6FA1F263AE200C3E2AE /* AddButton.swift in Sources */,
 				D21C6FCE1F25EDBE0033E363 /* AppDelegate.swift in Sources */,
 				D250D6F21F261DE000C3E2AE /* Credentials.swift in Sources */,
@@ -534,11 +545,14 @@
 			baseConfigurationReference = 2F923E91EAF362D9D7F3E392 /* Pods-salonyTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2AUX883V6A;
 				INFOPLIST_FILE = salonyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samback.salonyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "salonyTest/salonyTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -548,11 +562,13 @@
 			baseConfigurationReference = 4D4D52DCBCB0AB80F84F5A6D /* Pods-salonyTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2AUX883V6A;
 				INFOPLIST_FILE = salonyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samback.salonyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "salonyTest/salonyTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

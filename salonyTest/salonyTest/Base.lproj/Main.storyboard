@@ -85,15 +85,26 @@
                                                     <constraint firstAttribute="height" constant="60" id="vKZ-iX-pZH"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vp8-sG-XfA">
+                                                <rect key="frame" x="0.0" y="240" width="375" height="427"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="427" id="UXe-7z-psq"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="vOt-yp-pom" firstAttribute="leading" secondItem="g5r-CR-lcq" secondAttribute="leading" id="1Sy-6N-FPt"/>
+                                            <constraint firstItem="Vp8-sG-XfA" firstAttribute="leading" secondItem="g5r-CR-lcq" secondAttribute="leading" id="1qw-LZ-9Dk"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vp8-sG-XfA" secondAttribute="trailing" id="27Z-uk-X0h"/>
                                             <constraint firstAttribute="trailing" secondItem="vOt-yp-pom" secondAttribute="trailing" id="4sg-Py-wBQ"/>
+                                            <constraint firstItem="Vp8-sG-XfA" firstAttribute="top" secondItem="gk4-kN-7nS" secondAttribute="bottom" id="BzS-X0-gHt"/>
                                             <constraint firstItem="gk4-kN-7nS" firstAttribute="leading" secondItem="g5r-CR-lcq" secondAttribute="leading" id="NZ9-Ab-mxR"/>
                                             <constraint firstItem="gk4-kN-7nS" firstAttribute="top" secondItem="vOt-yp-pom" secondAttribute="bottom" id="VRo-9h-62B"/>
                                             <constraint firstAttribute="trailing" secondItem="gk4-kN-7nS" secondAttribute="trailing" id="ge8-VC-6KY"/>
                                             <constraint firstItem="vOt-yp-pom" firstAttribute="top" secondItem="g5r-CR-lcq" secondAttribute="top" id="mEy-gc-gRf"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vp8-sG-XfA" secondAttribute="bottom" id="nnV-4t-Wke"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -116,31 +127,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="locationView" destination="gk4-kN-7nS" id="CQc-nx-W7R"/>
+                        <outlet property="addressInfoContainer" destination="Vp8-sG-XfA" id="51K-ZX-e9I"/>
+                        <outlet property="locationViewContainer" destination="gk4-kN-7nS" id="uoS-Sn-Ntd"/>
                         <outlet property="mapContainer" destination="vOt-yp-pom" id="ULs-b3-Cgm"/>
+                        <outlet property="textFieldsHeight" destination="UXe-7z-psq" id="ryn-Dy-e5a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWD-nY-6So" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="942" y="139"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Us5-hH-6bA">
-            <objects>
-                <viewController id="Lgk-pa-qhY" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="27O-WG-Te1"/>
-                        <viewControllerLayoutGuide type="bottom" id="HsU-Fb-YX5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ho3-nv-BhN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pBw-mf-p5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1638" y="139"/>
         </scene>
     </scenes>
 </document>
