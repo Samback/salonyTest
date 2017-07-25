@@ -23,7 +23,7 @@ struct AppearanceController {
     private func configureTitle() {
         let navigationBar = UINavigationBar.appearance()
         navigationBar.barTintColor = .white
-        navigationBar.tintColor = .black
+        navigationBar.tintColor = .main
         
         let font = Font.regularFont(size: .p17)
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color.black,
