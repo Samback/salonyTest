@@ -38,7 +38,8 @@ final class MapViewController: ViewController {
             guard let navigationController = self.navigationController else {
                 return
             }
-            PresentAddNewAddressViewControllerAction().execute(on: navigationController, with: Address())
+            PresentAddNewAddressViewControllerAction()
+                .execute(on: navigationController, with: Address(coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0)))
         }
         
         attachChildViewController(mapViewController, containerView: mapContainer)
