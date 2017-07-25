@@ -30,6 +30,10 @@
 		D250D7041F269B3000C3E2AE /* AddNewAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */; };
 		D250D7061F269D1200C3E2AE /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7051F269D1200C3E2AE /* GoogleMapViewController.swift */; };
 		D250D7081F26A15D00C3E2AE /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7071F26A15D00C3E2AE /* UIViewController+extension.swift */; };
+		D250D70E1F26A67D00C3E2AE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D70D1F26A67D00C3E2AE /* Address.swift */; };
+		D250D7101F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D70F1F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift */; };
+		D252E7E41F27406B00CE90DD /* Completions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E31F27406B00CE90DD /* Completions.swift */; };
+		D252E7E61F27438200CE90DD /* CustomLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E51F27438200CE90DD /* CustomLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +64,10 @@
 		D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewAddressViewController.swift; sourceTree = "<group>"; };
 		D250D7051F269D1200C3E2AE /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		D250D7071F26A15D00C3E2AE /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		D250D70D1F26A67D00C3E2AE /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		D250D70F1F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAddNewAddressViewControllerAction.swift; sourceTree = "<group>"; };
+		D252E7E31F27406B00CE90DD /* Completions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Completions.swift; sourceTree = "<group>"; };
+		D252E7E51F27438200CE90DD /* CustomLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 		D21C6FCC1F25EDBE0033E363 /* salonyTest */ = {
 			isa = PBXGroup;
 			children = (
+				D250D70C1F26A67000C3E2AE /* Models */,
 				D250D6FD1F26997200C3E2AE /* Extensions */,
 				D250D6F01F261DC200C3E2AE /* Helpers */,
 				D21C6FE11F25EEEB0033E363 /* UI */,
@@ -128,6 +137,7 @@
 		D21C6FE11F25EEEB0033E363 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D250D7091F26A51700C3E2AE /* Controllers */,
 				D21C6FDF1F25EEE50033E363 /* AppearanceController.swift */,
 				D21C6FE21F25EF300033E363 /* Color.swift */,
 				D21C6FE41F25F5520033E363 /* Font.swift */,
@@ -136,7 +146,6 @@
 				D250D6F71F262FF100C3E2AE /* LocationView.swift */,
 				D250D6F91F263AE200C3E2AE /* AddButton.swift */,
 				D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */,
-				D250D7051F269D1200C3E2AE /* GoogleMapViewController.swift */,
 				D250D7071F26A15D00C3E2AE /* UIViewController+extension.swift */,
 			);
 			name = UI;
@@ -175,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				D250D6ED1F2616C900C3E2AE /* PresentMapViewControllerAction.swift */,
+				D250D70F1F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -184,6 +194,7 @@
 			children = (
 				D250D6F11F261DE000C3E2AE /* Credentials.swift */,
 				D250D7001F2699CB00C3E2AE /* Messages.swift */,
+				D252E7E31F27406B00CE90DD /* Completions.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -202,6 +213,23 @@
 				D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */,
 			);
 			name = AddNewAddress;
+			sourceTree = "<group>";
+		};
+		D250D7091F26A51700C3E2AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D250D7051F269D1200C3E2AE /* GoogleMapViewController.swift */,
+				D252E7E51F27438200CE90DD /* CustomLocationViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D250D70C1F26A67000C3E2AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D250D70D1F26A67D00C3E2AE /* Address.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +387,7 @@
 			files = (
 				D250D6F41F261F0700C3E2AE /* UIView+extension.swift in Sources */,
 				D250D6FC1F268D6500C3E2AE /* AddButtonView.swift in Sources */,
+				D252E7E61F27438200CE90DD /* CustomLocationViewController.swift in Sources */,
 				D250D7081F26A15D00C3E2AE /* UIViewController+extension.swift in Sources */,
 				D21C6FE51F25F5520033E363 /* Font.swift in Sources */,
 				D250D6EA1F26162300C3E2AE /* MapViewController.swift in Sources */,
@@ -370,11 +399,14 @@
 				D250D6EE1F2616C900C3E2AE /* PresentMapViewControllerAction.swift in Sources */,
 				D250D6F81F262FF100C3E2AE /* LocationView.swift in Sources */,
 				D250D6EC1F26164000C3E2AE /* ViewController.swift in Sources */,
+				D252E7E41F27406B00CE90DD /* Completions.swift in Sources */,
+				D250D70E1F26A67D00C3E2AE /* Address.swift in Sources */,
 				D21C6FE91F260D760033E363 /* R.generated.swift in Sources */,
 				D250D7041F269B3000C3E2AE /* AddNewAddressViewController.swift in Sources */,
 				D250D6FF1F26998500C3E2AE /* GMSCameraPosition+extension.swift in Sources */,
 				D21C6FE01F25EEE50033E363 /* AppearanceController.swift in Sources */,
 				D21C6FE31F25EF300033E363 /* Color.swift in Sources */,
+				D250D7101F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

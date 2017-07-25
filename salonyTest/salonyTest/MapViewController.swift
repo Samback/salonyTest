@@ -14,9 +14,10 @@ import GoogleMaps
 final class MapViewController: ViewController {
     
     @IBOutlet weak var mapContainer: UIView!
+    @IBOutlet weak var locationView: UIView!
     
-    @IBOutlet weak var locationView: LocationView!
     let mapViewController = GoogleMapViewController()
+    let locationViewController = CustomLocationViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,17 @@ final class MapViewController: ViewController {
             print("New position \(position.target)")
         }
         
+        locationViewController.tapAction = {[unowned self] in
+            guard let navigationController = self.navigationController else {
+                return
+            }
+            PresentAddNewAddressViewControllerAction().execute(on: navigationController, with: Address())
+        }
+        
         attachChildViewController(mapViewController, containerView: mapContainer)
+        
+        attachChildViewController(locationViewController, containerView: locationView)
+        
     }
 }
 

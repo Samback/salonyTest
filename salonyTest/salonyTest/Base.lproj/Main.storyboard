@@ -23,18 +23,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bz2-0W-mXM">
                                 <rect key="frame" x="0.0" y="20" width="375" height="587"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="QEf-8i-E8U" customClass="pin">
-                                        <rect key="frame" x="167.5" y="263.5" width="40" height="60"/>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="QEf-8i-E8U" firstAttribute="centerX" secondItem="bz2-0W-mXM" secondAttribute="centerX" id="nAW-6m-AQi"/>
-                                    <constraint firstItem="QEf-8i-E8U" firstAttribute="centerY" secondItem="bz2-0W-mXM" secondAttribute="centerY" id="x81-us-FrM"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-2w-Y9f" userLabel="Bottom Container" customClass="LocationView" customModule="salonyTest" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-2w-Y9f" userLabel="Bottom Container">
                                 <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -54,7 +45,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="locationView" destination="B9e-2w-Y9f" id="8pC-rx-W9X"/>
+                        <outlet property="locationView" destination="B9e-2w-Y9f" id="gch-De-N9y"/>
                         <outlet property="mapContainer" destination="bz2-0W-mXM" id="IAY-eV-617"/>
                     </connections>
                 </viewController>
@@ -74,11 +65,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZp-CG-6gE">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5r-CR-lcq">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOt-yp-pom" userLabel="mapContainer">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="T1E-XH-FIw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gk4-kN-7nS">
+                                                <rect key="frame" x="0.0" y="180" width="375" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="vKZ-iX-pZH"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="vOt-yp-pom" firstAttribute="leading" secondItem="g5r-CR-lcq" secondAttribute="leading" id="1Sy-6N-FPt"/>
+                                            <constraint firstAttribute="trailing" secondItem="vOt-yp-pom" secondAttribute="trailing" id="4sg-Py-wBQ"/>
+                                            <constraint firstItem="gk4-kN-7nS" firstAttribute="leading" secondItem="g5r-CR-lcq" secondAttribute="leading" id="NZ9-Ab-mxR"/>
+                                            <constraint firstItem="gk4-kN-7nS" firstAttribute="top" secondItem="vOt-yp-pom" secondAttribute="bottom" id="VRo-9h-62B"/>
+                                            <constraint firstAttribute="trailing" secondItem="gk4-kN-7nS" secondAttribute="trailing" id="ge8-VC-6KY"/>
+                                            <constraint firstItem="vOt-yp-pom" firstAttribute="top" secondItem="g5r-CR-lcq" secondAttribute="top" id="mEy-gc-gRf"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -92,20 +107,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iZp-CG-6gE" secondAttribute="trailing" id="1Gv-A8-2v8"/>
-                            <constraint firstItem="5vO-ai-CGf" firstAttribute="top" secondItem="iZp-CG-6gE" secondAttribute="bottom" id="RGq-Ts-CXW"/>
+                            <constraint firstAttribute="bottom" secondItem="iZp-CG-6gE" secondAttribute="bottom" id="5GN-Tt-nYY"/>
                             <constraint firstItem="iZp-CG-6gE" firstAttribute="leading" secondItem="Qeb-cK-Da9" secondAttribute="leading" id="VHT-qg-Zyl"/>
                             <constraint firstItem="g5r-CR-lcq" firstAttribute="width" secondItem="Qeb-cK-Da9" secondAttribute="width" id="kNH-4T-UL7"/>
-                            <constraint firstItem="iZp-CG-6gE" firstAttribute="top" secondItem="Z9A-lg-a2B" secondAttribute="bottom" id="ueb-wJ-yau"/>
                             <constraint firstItem="g5r-CR-lcq" firstAttribute="height" secondItem="Qeb-cK-Da9" secondAttribute="height" id="yas-ya-TGY"/>
+                            <constraint firstItem="iZp-CG-6gE" firstAttribute="top" secondItem="Qeb-cK-Da9" secondAttribute="top" id="zZ6-WE-qQU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationView" destination="gk4-kN-7nS" id="CQc-nx-W7R"/>
+                        <outlet property="mapContainer" destination="vOt-yp-pom" id="ULs-b3-Cgm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWD-nY-6So" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="942" y="139"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="pin" width="40" height="60"/>
-    </resources>
 </document>
