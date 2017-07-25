@@ -13,7 +13,9 @@ import Rswift
 class LocationView: UIView {
     @IBOutlet fileprivate weak var address: UILabel!
     @IBOutlet fileprivate weak var city: UILabel!
-    @IBOutlet fileprivate weak var addButtonView: AddButtonView!
+    @IBOutlet weak var addButton: AddButton!
+    
+    var tapAction: SimpleCompletion?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,15 +30,12 @@ class LocationView: UIView {
     private func commonInit() {
         let viewName = "LocationView"
         let view: UIView = Bundle.main.loadNibNamed(viewName, owner: self, options: nil)![0] as! UIView
-        self.addSubview(view)
+        addSubview(view)
         
         view.backgroundColor = .main
         view.alignAllEdges(to: self)
-        
         configLabelsUI()
-        addButtonView.tapAction = {
-            print("Let's open")
-        }
+        addButton.apply(config: .defaultConfig)
     }
     
     private func configLabelsUI() {

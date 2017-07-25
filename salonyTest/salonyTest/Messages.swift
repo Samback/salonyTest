@@ -19,4 +19,5 @@ struct Title {
 
 struct ErrorMessage {
    let mapViewController = "Something really bad with instantiating of view controller MapViewController"
+    let addNewAddressViewController = "Something really bad with instantiating of view controller AddNewAddressViewController"
 }
