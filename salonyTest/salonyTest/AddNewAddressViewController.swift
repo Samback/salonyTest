@@ -39,12 +39,9 @@ final class AddNewAddressViewController: ViewController {
         attachChildViewController(locationViewController, containerView: locationViewContainer)
         attachChildViewController(addressInfoViewController, containerView: addressInfoContainer)
         view.backgroundColor = .main
-        
-        let place = TextFieldInfo(placeholder: "Place ", text: nil)
-        
-        let places = [place, place, place, place, place, place]
-        textFieldsHeight.constant = CGFloat(places.count) * TextField.hight        
-        addressInfoViewController.setupTextFields(with: places)
+        let fieldsInfo = TextFieldInfo.convert(address: address)
+        textFieldsHeight.constant = CGFloat(fieldsInfo.count) * TextField.hight
+        addressInfoViewController.setupTextFields(with: fieldsInfo)
     }
     
     deinit {
