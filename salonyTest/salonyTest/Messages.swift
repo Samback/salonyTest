@@ -15,6 +15,7 @@ struct Messages {
 
 struct Title {
     let myAddress = "My Address"
+    let addNewAddress = "Add new address"
 }
 
 struct ErrorMessage {

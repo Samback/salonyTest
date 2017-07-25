@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMaps
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("Can't to register maps")
         }
         
+        IQKeyboardManager.sharedManager().enable = true
         AppearanceController().apply()
         PresentMapViewControllerAction().execute(at: window)
         

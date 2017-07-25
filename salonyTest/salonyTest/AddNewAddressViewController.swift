@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Rswift
+import IQKeyboardManagerSwift
 
 final class AddNewAddressViewController: ViewController {
     
@@ -24,12 +25,16 @@ final class AddNewAddressViewController: ViewController {
     
     fileprivate var address: Address!
     
+    var returnKeyHandler: IQKeyboardReturnKeyHandler!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
+        returnKeyHandler = IQKeyboardReturnKeyHandler.init(controller: self)
     }
     
     private func configUI() {
+        title = Messages.title.addNewAddress
         attachChildViewController(mapViewController, containerView: mapContainer)
         attachChildViewController(locationViewController, containerView: locationViewContainer)
         attachChildViewController(addressInfoViewController, containerView: addressInfoContainer)
@@ -37,10 +42,15 @@ final class AddNewAddressViewController: ViewController {
         
         let place = TextFieldInfo(placeholder: "Place ", text: nil)
         
-        let places = [place, place, place, place, place, place, place, place, place, place, place, place, place, place, place]
+        let places = [place, place, place, place, place, place]
         textFieldsHeight.constant = CGFloat(places.count) * TextField.hight        
         addressInfoViewController.setupTextFields(with: places)
-    }    
+    }
+    
+    deinit {
+        returnKeyHandler = nil
+    }
+    
 }
 
 extension AddNewAddressViewController {
