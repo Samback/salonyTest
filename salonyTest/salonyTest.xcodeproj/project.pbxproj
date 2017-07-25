@@ -34,6 +34,7 @@
 		D250D7101F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D70F1F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift */; };
 		D252E7E41F27406B00CE90DD /* Completions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E31F27406B00CE90DD /* Completions.swift */; };
 		D252E7E61F27438200CE90DD /* CustomLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E51F27438200CE90DD /* CustomLocationViewController.swift */; };
+		D252E7E81F2763D700CE90DD /* AddressInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E71F2763D700CE90DD /* AddressInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		D250D70F1F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAddNewAddressViewControllerAction.swift; sourceTree = "<group>"; };
 		D252E7E31F27406B00CE90DD /* Completions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Completions.swift; sourceTree = "<group>"; };
 		D252E7E51F27438200CE90DD /* CustomLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLocationViewController.swift; sourceTree = "<group>"; };
+		D252E7E71F2763D700CE90DD /* AddressInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			children = (
 				D250D7051F269D1200C3E2AE /* GoogleMapViewController.swift */,
 				D252E7E51F27438200CE90DD /* CustomLocationViewController.swift */,
+				D252E7E71F2763D700CE90DD /* AddressInfoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				D21C6FE91F260D760033E363 /* R.generated.swift in Sources */,
 				D250D7041F269B3000C3E2AE /* AddNewAddressViewController.swift in Sources */,
 				D250D6FF1F26998500C3E2AE /* GMSCameraPosition+extension.swift in Sources */,
+				D252E7E81F2763D700CE90DD /* AddressInfoViewController.swift in Sources */,
 				D21C6FE01F25EEE50033E363 /* AppearanceController.swift in Sources */,
 				D21C6FE31F25EF300033E363 /* Color.swift in Sources */,
 				D250D7101F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift in Sources */,
