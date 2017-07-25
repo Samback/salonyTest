@@ -34,10 +34,10 @@ final class AddressInfoViewController: ViewController {
     fileprivate func commonInit() {
         view.backgroundColor = .clear
         view.addSubview(stackView)
-        stackView.alignAllEdges(to: view)
+        stackView.align(to: view, leading: 25, trailing: 25, top: 0, bottom: 0)
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
-        view.backgroundColor = .red
+        view.backgroundColor = .main
     }
     
     func setupTextFields(with configs: [TextFieldInfo]) {
@@ -53,5 +53,7 @@ final class AddressInfoViewController: ViewController {
             textFields.append(textField)
             stackView.addArrangedSubview(textField)
         }
+        
+        textFields.last?.showLine = false
     }
 }

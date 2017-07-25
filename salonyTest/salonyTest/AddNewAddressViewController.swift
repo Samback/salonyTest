@@ -19,6 +19,7 @@ final class AddNewAddressViewController: ViewController {
     fileprivate let mapViewController = GoogleMapViewController()
     fileprivate let locationViewController = CustomLocationViewController()
     
+    @IBOutlet weak var textFieldsHeight: NSLayoutConstraint!
     fileprivate let addressInfoViewController = AddressInfoViewController()
     
     fileprivate var address: Address!
@@ -32,12 +33,13 @@ final class AddNewAddressViewController: ViewController {
         attachChildViewController(mapViewController, containerView: mapContainer)
         attachChildViewController(locationViewController, containerView: locationViewContainer)
         attachChildViewController(addressInfoViewController, containerView: addressInfoContainer)
+        view.backgroundColor = .main
         
-        let place = TextFieldInfo(placeholder: "Place ", text: "Nothing")
-        let place2 = TextFieldInfo(placeholder: "Place ", text: "Nothing")
-        let place3 = TextFieldInfo(placeholder: "Place ", text: "Nothing")
+        let place = TextFieldInfo(placeholder: "Place ", text: nil)
         
-        addressInfoViewController.setupTextFields(with: [place, place2, place3])
+        let places = [place, place, place, place, place, place, place, place, place, place, place, place, place, place, place]
+        textFieldsHeight.constant = CGFloat(places.count) * TextField.hight        
+        addressInfoViewController.setupTextFields(with: places)
     }    
 }
 

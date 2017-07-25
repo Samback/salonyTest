@@ -11,8 +11,13 @@ import JVFloatLabeledTextField
 
 class TextField: JVFloatLabeledTextField {
     
-    fileprivate let line = CALayer()
-    
+    static let hight: CGFloat = 44.0
+    fileprivate let line = UIView()
+    var showLine: Bool = true {
+        didSet {
+            line.isHidden = !showLine
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -23,22 +28,27 @@ class TextField: JVFloatLabeledTextField {
         commonInit()
     }
     
-   override func layoutSublayers(of layer: CALayer) {
-        super.layoutSublayers(of: layer)
-        
-        let layerFrame = layer.frame
-        line.frame = CGRect(x: layerFrame.minX, y: layerFrame.maxY - 1, width: layerFrame.maxX, height: 1)
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        line.frame = CGRect(x: bounds.minX, y: bounds.maxY - 1, width: bounds.maxX, height: 1)
     }
     
     fileprivate func commonInit() {
+        configLineUI()
+        configFieldUI()
+    }
+    
+    fileprivate func configLineUI() {
+        line.backgroundColor = Color.rgb255.withAlphaComponent(0.5)
+        addSubview(line)
+    }
+    
+    fileprivate func configFieldUI() {
         floatingLabelFont = Font.regularFont(size: .p10)
         floatingLabelTextColor = Color.rgb255.withAlphaComponent(0.5)
         floatingLabelActiveTextColor = Color.rgb255
         placeholderColor = Color.rgb255
         textColor = Color.rgb255
-        
-        line.borderColor = Color.rgb255.withAlphaComponent(0.3).cgColor
-        line.borderWidth = 1.0
-        layer.addSublayer(line)
+        tintColor = .rgb255
     }
 }
