@@ -28,7 +28,7 @@ struct AppearanceController {
         let font = Font.regularFont(size: .p17)
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color.black,
                                              NSFontAttributeName: font]
-        
+    
         let img = UIImage()
         navigationBar.shadowImage = img
     }

@@ -87,13 +87,13 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vp8-sG-XfA">
                                                 <rect key="frame" x="0.0" y="240" width="375" height="427"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="427" id="UXe-7z-psq"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="vOt-yp-pom" firstAttribute="leading" secondItem="g5r-CR-lcq" secondAttribute="leading" id="1Sy-6N-FPt"/>
                                             <constraint firstItem="Vp8-sG-XfA" firstAttribute="leading" secondItem="g5r-CR-lcq" secondAttribute="leading" id="1qw-LZ-9Dk"/>
