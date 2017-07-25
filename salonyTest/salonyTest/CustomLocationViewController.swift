@@ -15,7 +15,6 @@ class CustomLocationViewController: ViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         commonInit()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,8 +29,11 @@ class CustomLocationViewController: ViewController {
         locationView.addButton.addTarget(self, action: #selector(tapOnAddButton), for: .touchUpInside)
     }
     
+    func updateUI(with address: Address) {
+        locationView.updateUI(with: address)
+    }
+    
     dynamic func tapOnAddButton() {
         tapAction?()
     }
-
 }

@@ -14,6 +14,17 @@ final class GoogleMapViewController: ViewController {
     fileprivate var mapView: GMSMapView!
     fileprivate let pinImage = UIImageView(image: R.image.pin())
     var mapCenterHandler: ((GMSCameraPosition) -> Void)?
+    var position: GMSCameraPosition!
+    
+    
+    init(position: GMSCameraPosition) {
+        super.init(nibName: nil, bundle: nil)        
+        self.position = position
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +34,7 @@ final class GoogleMapViewController: ViewController {
     
     private func configMap() {
         mapView = GMSMapView()
-        mapView.animate(to: .defaultPosition)
+        mapView.animate(to: position)
         view.insertSubview(mapView, at: 0)
         mapView.alignAllEdges(to: view)
         mapView.delegate = self

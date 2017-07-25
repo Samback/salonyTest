@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Rswift
 import IQKeyboardManagerSwift
+import GoogleMaps
 
 final class AddNewAddressViewController: ViewController {
     
@@ -17,8 +18,19 @@ final class AddNewAddressViewController: ViewController {
     @IBOutlet fileprivate weak var locationViewContainer: UIView!
     @IBOutlet weak var addressInfoContainer: UIView!
     
-    fileprivate let mapViewController = GoogleMapViewController()
-    fileprivate let locationViewController = CustomLocationViewController()
+    fileprivate lazy var mapViewController: GoogleMapViewController = {
+        let cameraPosition = GMSCameraPosition(target: self.address.coordinate, zoom: 16, bearing: 0, viewingAngle: 0)
+        let mapViewController = GoogleMapViewController(position: cameraPosition)
+        
+        return mapViewController
+    }()
+    
+    fileprivate lazy var locationViewController: CustomLocationViewController = {
+        let locationViewController = CustomLocationViewController()
+        locationViewController.updateUI(with: self.address)
+        
+        return locationViewController
+    }()
     
     @IBOutlet weak var textFieldsHeight: NSLayoutConstraint!
     fileprivate let addressInfoViewController = AddressInfoViewController()
@@ -34,11 +46,24 @@ final class AddNewAddressViewController: ViewController {
     }
     
     private func configUI() {
+        baseUI()
+        attachControllers()
+        configFields()
+    }
+    
+    private func baseUI() {
         title = Messages.title.addNewAddress
+        view.backgroundColor = .main
+    }
+    
+    private func attachControllers() {
         attachChildViewController(mapViewController, containerView: mapContainer)
+        mapViewController.view.isUserInteractionEnabled = false
         attachChildViewController(locationViewController, containerView: locationViewContainer)
         attachChildViewController(addressInfoViewController, containerView: addressInfoContainer)
-        view.backgroundColor = .main
+    }
+    
+    private func configFields() {
         let fieldsInfo = TextFieldInfo.convert(address: address)
         textFieldsHeight.constant = CGFloat(fieldsInfo.count) * TextField.hight
         addressInfoViewController.setupTextFields(with: fieldsInfo)

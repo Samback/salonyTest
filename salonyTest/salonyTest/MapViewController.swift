@@ -16,7 +16,7 @@ final class MapViewController: ViewController {
     @IBOutlet weak var mapContainer: UIView!
     @IBOutlet weak var locationView: UIView!
     
-    let mapViewController = GoogleMapViewController()
+    let mapViewController = GoogleMapViewController(position: .defaultPosition)
     let locationViewController = CustomLocationViewController()
     
     override func viewDidLoad() {
@@ -43,7 +43,6 @@ final class MapViewController: ViewController {
         }
         
         attachChildViewController(mapViewController, containerView: mapContainer)
-        
         attachChildViewController(locationViewController, containerView: locationView)
         
     }

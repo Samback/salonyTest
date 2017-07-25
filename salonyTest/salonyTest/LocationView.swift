@@ -38,13 +38,18 @@ class LocationView: UIView {
         addButton.apply(config: .defaultConfig)
     }
     
+    func updateUI(with address: Address) {
+        self.address.text = address.street ?? "…"
+        city.text = address.area ?? "…"
+    }
+    
     private func configLabelsUI() {
         address.font = Font.boldFont(size: .p14)
         address.textColor = .rgb255
         city.font = Font.regularFont(size: .p12)
         city.textColor = .rgb255
         
-        address.text = "..."
-        city.text = "..."
+        address.text = "…"
+        city.text = "…"
     }
 }
