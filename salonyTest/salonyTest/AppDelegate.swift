@@ -16,21 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         guard let window = window else {
             return false
         }
         
-        guard GMSServices.provideAPIKey(Credentials.googleMaps) else {
-            fatalError("Can't to register maps")
-        }
-        
-        IQKeyboardManager.sharedManager().enable = true
-        AppearanceController().apply()
+        initalConfigs()
         PresentMapViewControllerAction().execute(at: window)
         
         return true
     }
 
+    fileprivate func initalConfigs() {
+        guard GMSServices.provideAPIKey(Credentials.googleMaps) else {
+            fatalError("Maps are not registered!")
+        }
+        
+        IQKeyboardManager.sharedManager().enable = true
+        AppearanceController().apply()
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {}
 
     func applicationDidEnterBackground(_ application: UIApplication) {}

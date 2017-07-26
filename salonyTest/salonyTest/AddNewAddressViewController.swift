@@ -11,6 +11,7 @@ import UIKit
 import Rswift
 import IQKeyboardManagerSwift
 import GoogleMaps
+import BPStatusBarAlert
 
 final class AddNewAddressViewController: ViewController {
     
@@ -45,34 +46,41 @@ final class AddNewAddressViewController: ViewController {
         returnKeyHandler = IQKeyboardReturnKeyHandler.init(controller: self)
     }
     
-    private func configUI() {
+    deinit {
+        returnKeyHandler = nil
+    }
+}
+
+extension AddNewAddressViewController {
+    
+    fileprivate func configUI() {
         baseUI()
-        attachControllers()
+        configControllers()
         configFields()
     }
     
-    private func baseUI() {
+    fileprivate func baseUI() {
         title = Messages.title.addNewAddress
         view.backgroundColor = .main
     }
     
-    private func attachControllers() {
+    fileprivate func configControllers() {
         attachChildViewController(mapViewController, containerView: mapContainer)
         mapViewController.view.isUserInteractionEnabled = false
         attachChildViewController(locationViewController, containerView: locationViewContainer)
+        
+        locationViewController.tapAction = {
+           BPStatusBarAlert.showAlert(with: Messages.text.demoApp)
+        }
+        
         attachChildViewController(addressInfoViewController, containerView: addressInfoContainer)
     }
     
-    private func configFields() {
-        let fieldsInfo = TextFieldInfo.convert(address: address)
+    fileprivate func configFields() {
+        let fieldsInfo = TextFieldProvider.convert(address: address)
         textFieldsHeight.constant = CGFloat(fieldsInfo.count) * TextField.hight
         addressInfoViewController.setupTextFields(with: fieldsInfo)
     }
-    
-    deinit {
-        returnKeyHandler = nil
-    }
-    
 }
 
 extension AddNewAddressViewController {

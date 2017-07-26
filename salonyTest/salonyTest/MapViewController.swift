@@ -74,11 +74,7 @@ final class MapViewController: ViewController {
         locationViewController.stopSpinner()
         
         if let error = error {
-            BPStatusBarAlert()
-                .message(message: error.localizedDescription)
-                .bgColor(color: .main)
-                .messageColor(color: .rgb255)
-                .show()
+            BPStatusBarAlert.showAlert(with: error.localizedDescription)
         }
     }
 }

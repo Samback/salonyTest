@@ -14,6 +14,13 @@ struct Area {
     let id: Int?
 }
 
+extension Area {
+    init(json: JSONDictionary) {
+        name = json["name"] as? String
+        id = json["id"] as? Int
+    }
+}
+
 struct AddressParameters {
     let avenue: String?
     let block: String?
@@ -47,19 +54,18 @@ extension Address {
             return nil
         }
         
-        guard let lat = json["lat"] as? String,
+        guard
+            let lat = json["lat"] as? String,
             let lng = json["lng"] as? String,
-        let latitude = Double(lat),
-        let longitude = Double(lng) else {
+            let latitude = Double(lat),
+            let longitude = Double(lng) else {
                 return nil
         }
         
         coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         
         if let areaDictionary = json["area"] as? JSONDictionary {
-            let name = areaDictionary["name"] as? String
-            let id = areaDictionary["id"] as! Int
-            area = Area(name: name, id: id)
+            area = Area(json: areaDictionary)
         } else {
             area = nil
         }

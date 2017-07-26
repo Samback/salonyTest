@@ -11,19 +11,19 @@ import UIKit
 
 final class AddressInfoViewController: ViewController {
     
+    let stackViewOffset: CGFloat = 25.0
+    
+    fileprivate let stackView = UIStackView()
     fileprivate var textFields = [TextField]()
     fileprivate var textFieldConfigs = [TextFieldInfo]() {
         didSet {
             updateTextFields()
         }
     }
-
-    fileprivate let stackView = UIStackView()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         commonInit()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,11 +34,14 @@ final class AddressInfoViewController: ViewController {
     fileprivate func commonInit() {
         view.backgroundColor = .clear
         view.addSubview(stackView)
-        stackView.align(to: view, leading: 25, trailing: 25, top: 0, bottom: 0)
+        stackView.align(to: view, leading: stackViewOffset, trailing: stackViewOffset, top: 0, bottom: 0)
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
         view.backgroundColor = .main
     }
+}
+
+extension AddressInfoViewController {
     
     func setupTextFields(with configs: [TextFieldInfo]) {
         textFieldConfigs = configs

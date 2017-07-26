@@ -11,10 +11,12 @@ import UIKit
 import GoogleMaps
 
 final class GoogleMapViewController: ViewController {
-    fileprivate var mapView: GMSMapView!
-    fileprivate let pinImage = UIImageView(image: R.image.pin())
+    
     var mapCenterHandler: ((GMSCameraPosition) -> Void)?
     var position: GMSCameraPosition!
+
+    fileprivate var mapView: GMSMapView!
+    fileprivate let pinImage = UIImageView(image: R.image.pin())
     
     init(position: GMSCameraPosition) {
         super.init(nibName: nil, bundle: nil)        

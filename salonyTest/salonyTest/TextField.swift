@@ -37,7 +37,9 @@ class TextField: JVFloatLabeledTextField {
         configLineUI()
         configFieldUI()
     }
-    
+}
+
+extension TextField {    
     fileprivate func configLineUI() {
         line.backgroundColor = Color.rgb255.withAlphaComponent(0.5)
         addSubview(line)

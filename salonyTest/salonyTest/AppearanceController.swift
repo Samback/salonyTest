@@ -12,15 +12,10 @@ import Rswift
 
 struct AppearanceController {
     func apply() {
-        applyAppearanceForNavigationBar()
+        configureNavigationBar()
     }
     
-    private func applyAppearanceForNavigationBar() {
-        configurebackButton()
-        configureTitle()
-    }
-    
-    private func configureTitle() {
+    private func configureNavigationBar() {
         let navigationBar = UINavigationBar.appearance()
         navigationBar.barTintColor = .white
         navigationBar.tintColor = .main
@@ -31,11 +26,11 @@ struct AppearanceController {
     
         let img = UIImage()
         navigationBar.shadowImage = img
+        configureBackButton()
     }
     
-    private func configurebackButton() {
+    private func configureBackButton() {
         let navigationBar = UINavigationBar.appearance()
-        
         let image = R.image.back()
         navigationBar.backIndicatorTransitionMaskImage = image
         navigationBar.backIndicatorImage = image

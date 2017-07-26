@@ -41,12 +41,9 @@ class LocationView: UIView {
         
         addButton.apply(config: .defaultConfig)
     }
-    
-    private func configSpinnerUI() {
-        spinner.isHidden = true
-        spinner.activityIndicatorViewStyle = .white
-    }
-    
+}
+
+extension LocationView {
     func updateUI(with address: Address?) {
         self.address.text = address?.parameters?.street ?? .threeDots
         city.text = address?.area?.name ?? .threeDots
@@ -61,7 +58,7 @@ class LocationView: UIView {
             .animate(withDuration: 0.5, animations: { [unowned self] in
                 self.addButton.alpha = 0
                 self.spinner.alpha = 1.0
-                }) { flag in
+            }) { flag in
                 if flag {
                     self.addButton.isHidden = true
                 }
@@ -84,7 +81,12 @@ class LocationView: UIView {
         }
     }
     
-    private func configLabelsUI() {
+    fileprivate func configSpinnerUI() {
+        spinner.isHidden = true
+        spinner.activityIndicatorViewStyle = .white
+    }
+    
+    fileprivate func configLabelsUI() {
         address.font = Font.boldFont(size: .p14)
         address.textColor = .rgb255
         city.font = Font.regularFont(size: .p12)

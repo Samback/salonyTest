@@ -13,7 +13,7 @@ struct TextFieldInfo {
     let text: String?
 }
 
-extension TextFieldInfo {
+struct TextFieldProvider {
     static func convert(address: Address) -> [TextFieldInfo] {
         var textFieldsInfo = [TextFieldInfo]()
         

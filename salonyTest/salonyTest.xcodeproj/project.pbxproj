@@ -24,7 +24,6 @@
 		D250D6F61F262BC700C3E2AE /* LocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D250D6F51F262BC700C3E2AE /* LocationView.xib */; };
 		D250D6F81F262FF100C3E2AE /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6F71F262FF100C3E2AE /* LocationView.swift */; };
 		D250D6FA1F263AE200C3E2AE /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6F91F263AE200C3E2AE /* AddButton.swift */; };
-		D250D6FC1F268D6500C3E2AE /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */; };
 		D250D6FF1F26998500C3E2AE /* GMSCameraPosition+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D6FE1F26998500C3E2AE /* GMSCameraPosition+extension.swift */; };
 		D250D7011F2699CB00C3E2AE /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7001F2699CB00C3E2AE /* Messages.swift */; };
 		D250D7041F269B3000C3E2AE /* AddNewAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */; };
@@ -41,6 +40,7 @@
 		D2A67E551F2871FF00D866D1 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E541F2871FF00D866D1 /* WebController.swift */; };
 		D2A67E581F28751800D866D1 /* FetchAddressInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E571F28751800D866D1 /* FetchAddressInfoController.swift */; };
 		D2A67E5A1F288FE100D866D1 /* NSError+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E591F288FE100D866D1 /* NSError+extension.swift */; };
+		D2A67E5C1F289D9300D866D1 /* BPStatusBarAlert+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E5B1F289D9300D866D1 /* BPStatusBarAlert+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,6 @@
 		D250D6F51F262BC700C3E2AE /* LocationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationView.xib; sourceTree = "<group>"; };
 		D250D6F71F262FF100C3E2AE /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		D250D6F91F263AE200C3E2AE /* AddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
-		D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButtonView.swift; sourceTree = "<group>"; };
 		D250D6FE1F26998500C3E2AE /* GMSCameraPosition+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GMSCameraPosition+extension.swift"; sourceTree = "<group>"; };
 		D250D7001F2699CB00C3E2AE /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewAddressViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		D2A67E541F2871FF00D866D1 /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 		D2A67E571F28751800D866D1 /* FetchAddressInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAddressInfoController.swift; sourceTree = "<group>"; };
 		D2A67E591F288FE100D866D1 /* NSError+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+extension.swift"; sourceTree = "<group>"; };
+		D2A67E5B1F289D9300D866D1 /* BPStatusBarAlert+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BPStatusBarAlert+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +161,6 @@
 				D250D6F31F261F0700C3E2AE /* UIView+extension.swift */,
 				D250D6F71F262FF100C3E2AE /* LocationView.swift */,
 				D250D6F91F263AE200C3E2AE /* AddButton.swift */,
-				D250D6FB1F268D6500C3E2AE /* AddButtonView.swift */,
 				D250D7071F26A15D00C3E2AE /* UIViewController+extension.swift */,
 				D252E7E91F27917500CE90DD /* TextField.swift */,
 			);
@@ -224,6 +223,7 @@
 				D250D6FE1F26998500C3E2AE /* GMSCameraPosition+extension.swift */,
 				D2A67E521F2844BA00D866D1 /* String+extension.swift */,
 				D2A67E591F288FE100D866D1 /* NSError+extension.swift */,
+				D2A67E5B1F289D9300D866D1 /* BPStatusBarAlert+extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -418,7 +418,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D250D6F41F261F0700C3E2AE /* UIView+extension.swift in Sources */,
-				D250D6FC1F268D6500C3E2AE /* AddButtonView.swift in Sources */,
 				D252E7E61F27438200CE90DD /* CustomLocationViewController.swift in Sources */,
 				D252E7EA1F27917500CE90DD /* TextField.swift in Sources */,
 				D250D7081F26A15D00C3E2AE /* UIViewController+extension.swift in Sources */,
@@ -430,6 +429,7 @@
 				D2A67E581F28751800D866D1 /* FetchAddressInfoController.swift in Sources */,
 				D250D6F21F261DE000C3E2AE /* Credentials.swift in Sources */,
 				D250D7011F2699CB00C3E2AE /* Messages.swift in Sources */,
+				D2A67E5C1F289D9300D866D1 /* BPStatusBarAlert+extension.swift in Sources */,
 				D2A67E531F2844BA00D866D1 /* String+extension.swift in Sources */,
 				D250D7061F269D1200C3E2AE /* GoogleMapViewController.swift in Sources */,
 				D250D6EE1F2616C900C3E2AE /* PresentMapViewControllerAction.swift in Sources */,

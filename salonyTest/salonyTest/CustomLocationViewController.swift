@@ -12,6 +12,7 @@ class CustomLocationViewController: ViewController {
     
     var locationView: LocationView!
     var tapAction: SimpleCompletion?
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         commonInit()
