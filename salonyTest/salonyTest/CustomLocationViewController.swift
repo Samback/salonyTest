@@ -33,6 +33,14 @@ class CustomLocationViewController: ViewController {
         locationView.updateUI(with: address)
     }
     
+    func startSpinner() {
+        locationView.startSpinner()
+    }
+    
+    func stopSpinner() {
+        locationView.stopSpinner()
+    }
+    
     dynamic func tapOnAddButton() {
         tapAction?()
     }

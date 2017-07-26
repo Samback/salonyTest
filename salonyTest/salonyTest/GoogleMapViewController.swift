@@ -16,7 +16,6 @@ final class GoogleMapViewController: ViewController {
     var mapCenterHandler: ((GMSCameraPosition) -> Void)?
     var position: GMSCameraPosition!
     
-    
     init(position: GMSCameraPosition) {
         super.init(nibName: nil, bundle: nil)        
         self.position = position

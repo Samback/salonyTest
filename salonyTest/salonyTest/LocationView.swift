@@ -14,6 +14,7 @@ class LocationView: UIView {
     @IBOutlet fileprivate weak var address: UILabel!
     @IBOutlet fileprivate weak var city: UILabel!
     @IBOutlet weak var addButton: AddButton!
+    @IBOutlet fileprivate weak var spinner: UIActivityIndicatorView!
     
     var tapAction: SimpleCompletion?
     
@@ -34,8 +35,16 @@ class LocationView: UIView {
         
         view.backgroundColor = .main
         view.alignAllEdges(to: self)
+        
         configLabelsUI()
+        configSpinnerUI()
+        
         addButton.apply(config: .defaultConfig)
+    }
+    
+    private func configSpinnerUI() {
+        spinner.isHidden = true
+        spinner.activityIndicatorViewStyle = .white
     }
     
     func updateUI(with address: Address) {
@@ -43,6 +52,37 @@ class LocationView: UIView {
         city.text = address.area ?? .threeDots
     }
     
+    func startSpinner() {
+        spinner.alpha = 0
+        spinner.startAnimating()
+        spinner.isHidden = false
+        
+        UIView.animate(withDuration: 0.5, animations: { [unowned self] in
+            self.addButton.alpha = 0
+            self.spinner.alpha = 1.0
+        }) { flag in
+            if flag {
+                self.addButton.isHidden = true
+            }
+        }    }
+    
+    func stopSpinner() {
+        addButton.alpha = 0
+        addButton.isHidden = false
+        
+        UIView.animate(withDuration: 0.5, animations: { [unowned self] in
+            self.addButton.alpha = 1
+            self.spinner.alpha = 0
+        }) { flag in
+            if flag {
+                self.spinner.isHidden = true
+                self.spinner.startAnimating()
+            }
+        }    }
+    
+    private func showSpinner(flag: Bool) {
+        
+    }
     private func configLabelsUI() {
         address.font = Font.boldFont(size: .p14)
         address.textColor = .rgb255
