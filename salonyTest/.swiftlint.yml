@@ -4,6 +4,7 @@
 excluded:
   - Pods
   - R.generated.swift
+  - salonyTestTests/
 
 disabled_rules:
   - leading_whitespace
