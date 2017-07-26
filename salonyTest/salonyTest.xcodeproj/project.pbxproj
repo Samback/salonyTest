@@ -37,6 +37,7 @@
 		D252E7E81F2763D700CE90DD /* AddressInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E71F2763D700CE90DD /* AddressInfoViewController.swift */; };
 		D252E7EA1F27917500CE90DD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E91F27917500CE90DD /* TextField.swift */; };
 		D252E7EF1F27971700CE90DD /* TextFieldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7EE1F27971700CE90DD /* TextFieldInfo.swift */; };
+		D2A67E531F2844BA00D866D1 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E521F2844BA00D866D1 /* String+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		D252E7E91F27917500CE90DD /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		D252E7EB1F27920D00CE90DD /* salonyTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "salonyTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		D252E7EE1F27971700CE90DD /* TextFieldInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldInfo.swift; sourceTree = "<group>"; };
+		D2A67E521F2844BA00D866D1 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				D250D6FE1F26998500C3E2AE /* GMSCameraPosition+extension.swift */,
+				D2A67E521F2844BA00D866D1 /* String+extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				D21C6FCE1F25EDBE0033E363 /* AppDelegate.swift in Sources */,
 				D250D6F21F261DE000C3E2AE /* Credentials.swift in Sources */,
 				D250D7011F2699CB00C3E2AE /* Messages.swift in Sources */,
+				D2A67E531F2844BA00D866D1 /* String+extension.swift in Sources */,
 				D250D7061F269D1200C3E2AE /* GoogleMapViewController.swift in Sources */,
 				D250D6EE1F2616C900C3E2AE /* PresentMapViewControllerAction.swift in Sources */,
 				D250D6F81F262FF100C3E2AE /* LocationView.swift in Sources */,
