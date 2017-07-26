@@ -10,14 +10,14 @@ import Foundation
 
 extension NSError {
     static var zerroResults: NSError {
-        return NSError.error(Messages.error.noAddressWasFound)
+            return NSError.error(message: Messages.error.noAddressWasFound)
     }
     
     static var undefinedError: NSError {
-        return NSError.error(Messages.error.undefinedError)
+            return NSError.error(message: Messages.error.undefinedError)
     }
     
-    static var error: (String) -> NSError = { message in
+    static func error(message: String) -> NSError {
         return NSError(domain: Bundle.main.bundleIdentifier ?? "com.my",
                        code: 200,
                        userInfo: [NSLocalizedDescriptionKey: message])

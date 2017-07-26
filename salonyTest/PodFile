@@ -10,4 +10,5 @@ pod 'GooglePlaces'
 pod 'IQKeyboardManagerSwift'
 pod 'JVFloatLabeledTextField'
 pod 'Alamofire'
+pod 'BPStatusBarAlert'
 end

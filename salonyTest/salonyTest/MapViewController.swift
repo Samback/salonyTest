@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Rswift
 import GoogleMaps
+import BPStatusBarAlert
 
 final class MapViewController: ViewController {
     
@@ -73,7 +74,11 @@ final class MapViewController: ViewController {
         locationViewController.stopSpinner()
         
         if let error = error {
-            
+            BPStatusBarAlert()
+                .message(message: error.localizedDescription)
+                .bgColor(color: .main)
+                .messageColor(color: .rgb255)
+                .show()
         }
     }
 }
