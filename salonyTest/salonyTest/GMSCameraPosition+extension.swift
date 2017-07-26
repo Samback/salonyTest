@@ -11,5 +11,5 @@ import GoogleMaps
 
 extension GMSCameraPosition {
     static let defaultPosition = GMSCameraPosition
-        .camera(withLatitude: 29.364813, longitude: 47.982395, zoom: 20.0)
+        .camera(withLatitude: 29.364813, longitude: 47.982395, zoom: 15.0)
 }

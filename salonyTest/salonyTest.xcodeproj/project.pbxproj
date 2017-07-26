@@ -572,6 +572,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2AUX883V6A;
 				INFOPLIST_FILE = salonyTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samback.salonyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -589,6 +590,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2AUX883V6A;
 				INFOPLIST_FILE = salonyTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samback.salonyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

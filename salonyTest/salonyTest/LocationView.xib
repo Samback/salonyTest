@@ -24,6 +24,10 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_location_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cdY-bN-4zo">
                     <rect key="frame" x="26" y="18.5" width="16" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="PTV-w0-mmP"/>
+                        <constraint firstAttribute="height" constant="23" id="Wsz-RZ-iby"/>
+                    </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQg-t9-Yc9">
                     <rect key="frame" x="60" y="16" width="42" height="21"/>
