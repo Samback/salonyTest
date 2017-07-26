@@ -22,7 +22,7 @@ struct AppearanceController {
         navigationBar.barTintColor = .white
         navigationBar.tintColor = .main
         
-        let font = Font.regularFont(size: .p17)
+        let font = Font.regularFont(size: 17)
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color.black,
                                              NSFontAttributeName: font]
     

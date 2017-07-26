@@ -88,9 +88,9 @@ extension LocationView {
     }
     
     fileprivate func configLabelsUI() {
-        address.font = Font.boldFont(size: .p14)
+        address.font = Font.boldFont(size: 14)
         address.textColor = .rgb255
-        city.font = Font.regularFont(size: .p12)
+        city.font = Font.regularFont(size: 12)
         city.textColor = .rgb255
         address.text = .threeDots
         city.text = .threeDots

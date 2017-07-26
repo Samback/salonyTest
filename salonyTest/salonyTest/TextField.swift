@@ -47,7 +47,7 @@ extension TextField {
     }
     
     fileprivate func configFieldUI() {
-        floatingLabelFont = Font.regularFont(size: .p10)
+        floatingLabelFont = Font.regularFont(size: 10)
         floatingLabelTextColor = Color.rgb255.withAlphaComponent(0.5)
         floatingLabelActiveTextColor = Color.rgb255
         floatingLabelYPadding = 4

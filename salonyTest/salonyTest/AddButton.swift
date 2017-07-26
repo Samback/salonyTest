@@ -19,7 +19,7 @@ struct AddButtonConfig {
 extension AddButtonConfig {
     static var defaultConfig: AddButtonConfig {
         return AddButtonConfig(backgroundColor: .white, title: "Add", titleColor: .main,
-                               font: Font.boldFont(size: .p14))
+                               font: Font.boldFont(size: 14))
     }
 }
 
