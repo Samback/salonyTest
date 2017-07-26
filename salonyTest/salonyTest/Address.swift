@@ -9,36 +9,6 @@
 import Foundation
 import CoreLocation
 
-struct Area {
-    let name: String?
-    let id: Int?
-}
-
-extension Area {
-    init(json: JSONDictionary) {
-        name = json["name"] as? String
-        id = json["id"] as? Int
-    }
-}
-
-struct AddressParameters {
-    let avenue: String?
-    let block: String?
-    let building: String?
-    let province: String?
-    let street: String?
-}
-
-extension AddressParameters {
-    init(json: JSONDictionary) {
-        avenue = json["avenu"] as? String
-        block = json["block"] as? String
-        building = json["building"] as? String
-        province = json["province"] as? String
-        street = json["street"] as? String
-    }
-}
-
 /** Main address model */
 struct Address {
     let coordinate: CLLocationCoordinate2D

@@ -41,6 +41,9 @@
 		D2A67E581F28751800D866D1 /* FetchAddressInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E571F28751800D866D1 /* FetchAddressInfoController.swift */; };
 		D2A67E5A1F288FE100D866D1 /* NSError+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E591F288FE100D866D1 /* NSError+extension.swift */; };
 		D2A67E5C1F289D9300D866D1 /* BPStatusBarAlert+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E5B1F289D9300D866D1 /* BPStatusBarAlert+extension.swift */; };
+		D2A67E5E1F28BE9B00D866D1 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E5D1F28BE9B00D866D1 /* Area.swift */; };
+		D2A67E601F28BEB700D866D1 /* AddressParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E5F1F28BEB700D866D1 /* AddressParameters.swift */; };
+		D2A67E621F28BF5E00D866D1 /* TextFieldProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E611F28BF5E00D866D1 /* TextFieldProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +86,9 @@
 		D2A67E571F28751800D866D1 /* FetchAddressInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAddressInfoController.swift; sourceTree = "<group>"; };
 		D2A67E591F288FE100D866D1 /* NSError+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+extension.swift"; sourceTree = "<group>"; };
 		D2A67E5B1F289D9300D866D1 /* BPStatusBarAlert+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BPStatusBarAlert+extension.swift"; sourceTree = "<group>"; };
+		D2A67E5D1F28BE9B00D866D1 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		D2A67E5F1F28BEB700D866D1 /* AddressParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressParameters.swift; sourceTree = "<group>"; };
+		D2A67E611F28BF5E00D866D1 /* TextFieldProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +239,7 @@
 			children = (
 				D250D7031F269B3000C3E2AE /* AddNewAddressViewController.swift */,
 				D252E7EE1F27971700CE90DD /* TextFieldInfo.swift */,
+				D2A67E611F28BF5E00D866D1 /* TextFieldProvider.swift */,
 			);
 			name = AddNewAddress;
 			sourceTree = "<group>";
@@ -251,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				D250D70D1F26A67D00C3E2AE /* Address.swift */,
+				D2A67E5D1F28BE9B00D866D1 /* Area.swift */,
+				D2A67E5F1F28BEB700D866D1 /* AddressParameters.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -423,10 +432,12 @@
 				D250D7081F26A15D00C3E2AE /* UIViewController+extension.swift in Sources */,
 				D21C6FE51F25F5520033E363 /* Font.swift in Sources */,
 				D250D6EA1F26162300C3E2AE /* MapViewController.swift in Sources */,
+				D2A67E621F28BF5E00D866D1 /* TextFieldProvider.swift in Sources */,
 				D252E7EF1F27971700CE90DD /* TextFieldInfo.swift in Sources */,
 				D250D6FA1F263AE200C3E2AE /* AddButton.swift in Sources */,
 				D21C6FCE1F25EDBE0033E363 /* AppDelegate.swift in Sources */,
 				D2A67E581F28751800D866D1 /* FetchAddressInfoController.swift in Sources */,
+				D2A67E5E1F28BE9B00D866D1 /* Area.swift in Sources */,
 				D250D6F21F261DE000C3E2AE /* Credentials.swift in Sources */,
 				D250D7011F2699CB00C3E2AE /* Messages.swift in Sources */,
 				D2A67E5C1F289D9300D866D1 /* BPStatusBarAlert+extension.swift in Sources */,
@@ -444,6 +455,7 @@
 				D21C6FE01F25EEE50033E363 /* AppearanceController.swift in Sources */,
 				D21C6FE31F25EF300033E363 /* Color.swift in Sources */,
 				D250D7101F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift in Sources */,
+				D2A67E601F28BEB700D866D1 /* AddressParameters.swift in Sources */,
 				D2A67E5A1F288FE100D866D1 /* NSError+extension.swift in Sources */,
 				D2A67E551F2871FF00D866D1 /* WebController.swift in Sources */,
 			);
