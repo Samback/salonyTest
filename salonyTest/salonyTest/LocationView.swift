@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 import Rswift
 
-
 /** LocationView - main view of LocationViewController based on xib file.
  */
 class LocationView: UIView {

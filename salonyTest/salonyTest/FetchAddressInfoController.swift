@@ -10,7 +10,6 @@ import Foundation
 import CoreLocation
 import Alamofire
 
-
 /**
  Helper structure to manage networking connection with server side and fetch address info via geolocation data.
  */

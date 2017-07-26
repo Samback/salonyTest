@@ -9,7 +9,6 @@
 import Foundation
 import JVFloatLabeledTextField
 
-
 /** TextField - inherited class with custom config of JVFloatLabeledTextField. */
 class TextField: JVFloatLabeledTextField {
     

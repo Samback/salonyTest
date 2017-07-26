@@ -13,7 +13,6 @@ struct TextFieldInfo {
     let text: String?
 }
 
-
 /** TextFieldProvider - helper struct that provide array of TextFieldInfo based on fetched address.*/
 struct TextFieldProvider {
     static func convert(address: Address) -> [TextFieldInfo] {
