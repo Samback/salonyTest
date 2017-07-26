@@ -8,6 +8,10 @@
 
 import Foundation
 
+/** CustomLocationViewController - view controller that represent info about selected position.
+ It contains spinner that runs on moment of request. Also you can handle `addButton` tap via
+ completion handler.
+ */
 class CustomLocationViewController: ViewController {
     
     var locationView: LocationView!

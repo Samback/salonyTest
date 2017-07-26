@@ -9,6 +9,8 @@
 import Foundation
 import JVFloatLabeledTextField
 
+
+/** TextField - inherited class with custom config of JVFloatLabeledTextField. */
 class TextField: JVFloatLabeledTextField {
     
     static let hight: CGFloat = 44.0

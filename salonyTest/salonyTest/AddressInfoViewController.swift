@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+/**AddressInfoViewController - view controller that represent multiple number of `textFields`
+based on `UIStackView`. Number of `textFields` managed by `TextFieldProvider`.
+ */
 final class AddressInfoViewController: ViewController {
     
     let stackViewOffset: CGFloat = 25.0

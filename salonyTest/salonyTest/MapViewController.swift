@@ -12,6 +12,7 @@ import Rswift
 import GoogleMaps
 import BPStatusBarAlert
 
+/** MapViewController - view controller that helps user find location that he want to add as new address. */  
 final class MapViewController: ViewController {
     
     @IBOutlet weak var mapContainer: UIView!

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+/** PresentAddNewAddressViewControllerAction - action that present add new address view controller. */
 struct PresentAddNewAddressViewControllerAction {
     func execute(on navigationController: UINavigationController, with address: Address,
                  animated: Bool = true) {

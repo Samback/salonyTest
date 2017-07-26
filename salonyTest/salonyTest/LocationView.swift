@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 import Rswift
 
+
+/** LocationView - main view of LocationViewController based on xib file.
+ */
 class LocationView: UIView {
     @IBOutlet fileprivate weak var address: UILabel!
     @IBOutlet fileprivate weak var city: UILabel!
@@ -65,8 +68,7 @@ extension LocationView {
         }
     }
     
-    func stopSpinner() {
-        
+    func stopSpinner() {        
         addButton.alpha = 0
         addButton.isHidden = false
         

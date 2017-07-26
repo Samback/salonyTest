@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 import Rswift
 
+
+/** AppearanceController struct that help you to manage appearance UI of the application.
+ */
 struct AppearanceController {
     func apply() {
         configureNavigationBar()

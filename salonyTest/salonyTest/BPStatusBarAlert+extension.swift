@@ -10,6 +10,7 @@ import Foundation
 import BPStatusBarAlert
 
 extension BPStatusBarAlert {
+    /** Custom status bar alert showing */
     static func showAlert(with message: String) {
         BPStatusBarAlert()
             .message(message: message)

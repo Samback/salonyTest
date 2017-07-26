@@ -10,6 +10,10 @@ import Foundation
 import CoreLocation
 import Alamofire
 
+
+/**
+ Helper structure to manage networking connection with server side and fetch address info via geolocation data.
+ */
 struct FetchAddressInfoController {
     func address(with location: CLLocationCoordinate2D, completion: @escaping AddressCompletion) {
         let parameters = ["lat": location.latitude,

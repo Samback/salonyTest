@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 import GoogleMaps
 
+/** GoogleMapViewController - view controller that contains map and image of pin 
+ at the middle on top of it.
+ */
 final class GoogleMapViewController: ViewController {
     
     var mapCenterHandler: ((GMSCameraPosition) -> Void)?

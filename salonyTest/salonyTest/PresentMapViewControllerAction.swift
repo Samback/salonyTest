@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/** PresentMapViewControllerAction - action that present map view controller. */
 struct PresentMapViewControllerAction {
     func execute(at window: UIWindow) {
         let mapViewController = MapViewController.instantiate()

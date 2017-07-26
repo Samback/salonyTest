@@ -39,6 +39,7 @@ extension AddressParameters {
     }
 }
 
+/** Main address model */
 struct Address {
     let coordinate: CLLocationCoordinate2D
     let area: Area?
