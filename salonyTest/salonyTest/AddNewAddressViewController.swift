@@ -13,7 +13,6 @@ import IQKeyboardManagerSwift
 import GoogleMaps
 import BPStatusBarAlert
 
-
 /** AddNewAddressViewController - view controller that show for user map, location info and address fields. */ 
 final class AddNewAddressViewController: ViewController {
     

@@ -23,7 +23,6 @@ extension AddButtonConfig {
     }
 }
 
-
 /** Custom button with rounded corners and custom image. */
 class AddButton: UIButton {
     
