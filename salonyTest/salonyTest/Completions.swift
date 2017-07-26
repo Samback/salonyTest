@@ -9,3 +9,4 @@
 import Foundation
 
 typealias SimpleCompletion = () -> Void
+typealias AddressCompletion = (Address?, NSError?) -> Void

@@ -44,13 +44,14 @@ final class GoogleMapViewController: ViewController {
         pinImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint
             .activate([pinImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                       pinImage.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+                       pinImage.centerYAnchor.constraint(equalTo: view.centerYAnchor,
+                                                         constant: -pinImage.bounds.height / 2)
             ])
     }
 }
 
 extension GoogleMapViewController: GMSMapViewDelegate {
     public func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
-        print("Center \(position.target)")
+        mapCenterHandler?(position)
     }
 }

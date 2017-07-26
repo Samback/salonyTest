@@ -30,6 +30,8 @@ struct AddressInfo {
 }
 
 struct ErrorMessage {
-   let mapViewController = "Something really bad with instantiating of view controller MapViewController"
+    let mapViewController = "Something really bad with instantiating of view controller MapViewController"
     let addNewAddressViewController = "Something really bad with instantiating of view controller AddNewAddressViewController"
+    let noAddressWasFound = "No address was found!"
+    let undefinedError = "Undefined error. Please contact to developers."
 }

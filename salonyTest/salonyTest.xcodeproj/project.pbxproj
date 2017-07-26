@@ -38,6 +38,9 @@
 		D252E7EA1F27917500CE90DD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7E91F27917500CE90DD /* TextField.swift */; };
 		D252E7EF1F27971700CE90DD /* TextFieldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252E7EE1F27971700CE90DD /* TextFieldInfo.swift */; };
 		D2A67E531F2844BA00D866D1 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E521F2844BA00D866D1 /* String+extension.swift */; };
+		D2A67E551F2871FF00D866D1 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E541F2871FF00D866D1 /* WebController.swift */; };
+		D2A67E581F28751800D866D1 /* FetchAddressInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E571F28751800D866D1 /* FetchAddressInfoController.swift */; };
+		D2A67E5A1F288FE100D866D1 /* NSError+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E591F288FE100D866D1 /* NSError+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,9 @@
 		D252E7EB1F27920D00CE90DD /* salonyTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "salonyTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		D252E7EE1F27971700CE90DD /* TextFieldInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldInfo.swift; sourceTree = "<group>"; };
 		D2A67E521F2844BA00D866D1 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		D2A67E541F2871FF00D866D1 /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		D2A67E571F28751800D866D1 /* FetchAddressInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAddressInfoController.swift; sourceTree = "<group>"; };
+		D2A67E591F288FE100D866D1 /* NSError+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 		D21C6FCC1F25EDBE0033E363 /* salonyTest */ = {
 			isa = PBXGroup;
 			children = (
+				D2A67E561F28748D00D866D1 /* Networking */,
 				D250D70C1F26A67000C3E2AE /* Models */,
 				D250D6FD1F26997200C3E2AE /* Extensions */,
 				D250D6F01F261DC200C3E2AE /* Helpers */,
@@ -206,6 +213,7 @@
 				D250D6F11F261DE000C3E2AE /* Credentials.swift */,
 				D250D7001F2699CB00C3E2AE /* Messages.swift */,
 				D252E7E31F27406B00CE90DD /* Completions.swift */,
+				D2A67E541F2871FF00D866D1 /* WebController.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -215,6 +223,7 @@
 			children = (
 				D250D6FE1F26998500C3E2AE /* GMSCameraPosition+extension.swift */,
 				D2A67E521F2844BA00D866D1 /* String+extension.swift */,
+				D2A67E591F288FE100D866D1 /* NSError+extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -244,6 +253,14 @@
 				D250D70D1F26A67D00C3E2AE /* Address.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D2A67E561F28748D00D866D1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D2A67E571F28751800D866D1 /* FetchAddressInfoController.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +427,7 @@
 				D252E7EF1F27971700CE90DD /* TextFieldInfo.swift in Sources */,
 				D250D6FA1F263AE200C3E2AE /* AddButton.swift in Sources */,
 				D21C6FCE1F25EDBE0033E363 /* AppDelegate.swift in Sources */,
+				D2A67E581F28751800D866D1 /* FetchAddressInfoController.swift in Sources */,
 				D250D6F21F261DE000C3E2AE /* Credentials.swift in Sources */,
 				D250D7011F2699CB00C3E2AE /* Messages.swift in Sources */,
 				D2A67E531F2844BA00D866D1 /* String+extension.swift in Sources */,
@@ -426,6 +444,8 @@
 				D21C6FE01F25EEE50033E363 /* AppearanceController.swift in Sources */,
 				D21C6FE31F25EF300033E363 /* Color.swift in Sources */,
 				D250D7101F26A73D00C3E2AE /* PresentAddNewAddressViewControllerAction.swift in Sources */,
+				D2A67E5A1F288FE100D866D1 /* NSError+extension.swift in Sources */,
+				D2A67E551F2871FF00D866D1 /* WebController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

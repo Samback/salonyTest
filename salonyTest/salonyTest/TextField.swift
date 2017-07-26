@@ -47,6 +47,7 @@ class TextField: JVFloatLabeledTextField {
         floatingLabelFont = Font.regularFont(size: .p10)
         floatingLabelTextColor = Color.rgb255.withAlphaComponent(0.5)
         floatingLabelActiveTextColor = Color.rgb255
+        floatingLabelYPadding = 4
         placeholderColor = Color.rgb255
         textColor = Color.rgb255
         tintColor = .rgb255
