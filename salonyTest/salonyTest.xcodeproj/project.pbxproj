@@ -44,7 +44,26 @@
 		D2A67E5E1F28BE9B00D866D1 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E5D1F28BE9B00D866D1 /* Area.swift */; };
 		D2A67E601F28BEB700D866D1 /* AddressParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E5F1F28BEB700D866D1 /* AddressParameters.swift */; };
 		D2A67E621F28BF5E00D866D1 /* TextFieldProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E611F28BF5E00D866D1 /* TextFieldProvider.swift */; };
+		D2A67E6A1F28C0DC00D866D1 /* salonyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E691F28C0DC00D866D1 /* salonyTestTests.swift */; };
+		D2A67E721F28C15900D866D1 /* AddressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E711F28C15900D866D1 /* AddressTest.swift */; };
+		D2A67E731F28C17400D866D1 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250D70D1F26A67D00C3E2AE /* Address.swift */; };
+		D2A67E741F28C26B00D866D1 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E541F2871FF00D866D1 /* WebController.swift */; };
+		D2A67E761F28C51800D866D1 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E751F28C51800D866D1 /* String+extension.swift */; };
+		D2A67E771F28C78600D866D1 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E5D1F28BE9B00D866D1 /* Area.swift */; };
+		D2A67E781F28C78B00D866D1 /* AddressParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E5F1F28BEB700D866D1 /* AddressParameters.swift */; };
+		D2A67E7C1F28CA1E00D866D1 /* AreaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E7B1F28CA1E00D866D1 /* AreaTest.swift */; };
+		D2A67E7E1F28CE7000D866D1 /* AddressParametersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A67E7D1F28CE7000D866D1 /* AddressParametersTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2A67E6C1F28C0DC00D866D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D21C6FC21F25EDBE0033E363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21C6FC91F25EDBE0033E363;
+			remoteInfo = salonyTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F923E91EAF362D9D7F3E392 /* Pods-salonyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salonyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-salonyTest/Pods-salonyTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +108,13 @@
 		D2A67E5D1F28BE9B00D866D1 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		D2A67E5F1F28BEB700D866D1 /* AddressParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressParameters.swift; sourceTree = "<group>"; };
 		D2A67E611F28BF5E00D866D1 /* TextFieldProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldProvider.swift; sourceTree = "<group>"; };
+		D2A67E671F28C0DC00D866D1 /* salonyTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salonyTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A67E691F28C0DC00D866D1 /* salonyTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salonyTestTests.swift; sourceTree = "<group>"; };
+		D2A67E6B1F28C0DC00D866D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A67E711F28C15900D866D1 /* AddressTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTest.swift; sourceTree = "<group>"; };
+		D2A67E751F28C51800D866D1 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		D2A67E7B1F28CA1E00D866D1 /* AreaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaTest.swift; sourceTree = "<group>"; };
+		D2A67E7D1F28CE7000D866D1 /* AddressParametersTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressParametersTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +123,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3DABC32B1396C5C2BE5F46 /* Pods_salonyTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A67E641F28C0DC00D866D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +158,7 @@
 			children = (
 				D21C6FCC1F25EDBE0033E363 /* salonyTest */,
 				D21C6FE71F260D5C0033E363 /* Resources */,
+				D2A67E681F28C0DC00D866D1 /* salonyTestTests */,
 				D21C6FCB1F25EDBE0033E363 /* Products */,
 				01177F1193285D1B094FE368 /* Pods */,
 				7C213769072B6385B888173D /* Frameworks */,
@@ -135,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D21C6FCA1F25EDBE0033E363 /* salonyTest.app */,
+				D2A67E671F28C0DC00D866D1 /* salonyTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,6 +307,19 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		D2A67E681F28C0DC00D866D1 /* salonyTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2A67E691F28C0DC00D866D1 /* salonyTestTests.swift */,
+				D2A67E6B1F28C0DC00D866D1 /* Info.plist */,
+				D2A67E711F28C15900D866D1 /* AddressTest.swift */,
+				D2A67E751F28C51800D866D1 /* String+extension.swift */,
+				D2A67E7B1F28CA1E00D866D1 /* AreaTest.swift */,
+				D2A67E7D1F28CE7000D866D1 /* AddressParametersTest.swift */,
+			);
+			path = salonyTestTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,6 +345,24 @@
 			productReference = D21C6FCA1F25EDBE0033E363 /* salonyTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2A67E661F28C0DC00D866D1 /* salonyTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A67E701F28C0DC00D866D1 /* Build configuration list for PBXNativeTarget "salonyTestTests" */;
+			buildPhases = (
+				D2A67E631F28C0DC00D866D1 /* Sources */,
+				D2A67E641F28C0DC00D866D1 /* Frameworks */,
+				D2A67E651F28C0DC00D866D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2A67E6D1F28C0DC00D866D1 /* PBXTargetDependency */,
+			);
+			name = salonyTestTests;
+			productName = salonyTestTests;
+			productReference = D2A67E671F28C0DC00D866D1 /* salonyTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -312,6 +378,12 @@
 						DevelopmentTeam = 2AUX883V6A;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+					};
+					D2A67E661F28C0DC00D866D1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2AUX883V6A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D21C6FC91F25EDBE0033E363;
 					};
 				};
 			};
@@ -329,6 +401,7 @@
 			projectRoot = "";
 			targets = (
 				D21C6FC91F25EDBE0033E363 /* salonyTest */,
+				D2A67E661F28C0DC00D866D1 /* salonyTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,6 +415,13 @@
 				D21C6FD51F25EDBE0033E363 /* Assets.xcassets in Resources */,
 				D250D6F61F262BC700C3E2AE /* LocationView.xib in Resources */,
 				D21C6FD31F25EDBE0033E363 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A67E651F28C0DC00D866D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +541,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2A67E631F28C0DC00D866D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A67E741F28C26B00D866D1 /* WebController.swift in Sources */,
+				D2A67E761F28C51800D866D1 /* String+extension.swift in Sources */,
+				D2A67E7C1F28CA1E00D866D1 /* AreaTest.swift in Sources */,
+				D2A67E7E1F28CE7000D866D1 /* AddressParametersTest.swift in Sources */,
+				D2A67E731F28C17400D866D1 /* Address.swift in Sources */,
+				D2A67E721F28C15900D866D1 /* AddressTest.swift in Sources */,
+				D2A67E771F28C78600D866D1 /* Area.swift in Sources */,
+				D2A67E781F28C78B00D866D1 /* AddressParameters.swift in Sources */,
+				D2A67E6A1F28C0DC00D866D1 /* salonyTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2A67E6D1F28C0DC00D866D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D21C6FC91F25EDBE0033E363 /* salonyTest */;
+			targetProxy = D2A67E6C1F28C0DC00D866D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D21C6FD11F25EDBE0033E363 /* Main.storyboard */ = {
@@ -611,6 +715,34 @@
 			};
 			name = Release;
 		};
+		D2A67E6E1F28C0DC00D866D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2AUX883V6A;
+				INFOPLIST_FILE = salonyTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samback.salonyTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salonyTest.app/salonyTest";
+			};
+			name = Debug;
+		};
+		D2A67E6F1F28C0DC00D866D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2AUX883V6A;
+				INFOPLIST_FILE = salonyTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samback.salonyTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salonyTest.app/salonyTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,6 +763,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D2A67E701F28C0DC00D866D1 /* Build configuration list for PBXNativeTarget "salonyTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A67E6E1F28C0DC00D866D1 /* Debug */,
+				D2A67E6F1F28C0DC00D866D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
