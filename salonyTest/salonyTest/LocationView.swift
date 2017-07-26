@@ -47,8 +47,8 @@ class LocationView: UIView {
 
 extension LocationView {
     func updateUI(with address: Address?) {
-        self.address.text = address?.parameters?.street ?? .threeDots
-        city.text = address?.area?.name ?? .threeDots
+        self.address.text = address?.parameters?.street ?? .ellipsis
+        city.text = address?.area?.name ?? .ellipsis
     }
     
     func startSpinner() {
@@ -92,7 +92,7 @@ extension LocationView {
         address.textColor = .rgb255
         city.font = Font.regularFont(size: 12)
         city.textColor = .rgb255
-        address.text = .threeDots
-        city.text = .threeDots
+        address.text = .ellipsis
+        city.text = .ellipsis
     }
 }
