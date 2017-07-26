@@ -28,7 +28,7 @@ class LocationView: UIView {
     }
     
     private func commonInit() {
-        let viewName = "LocationView"
+        let viewName = R.nib.locationView.name
         let view: UIView = Bundle.main.loadNibNamed(viewName, owner: self, options: nil)![0] as! UIView
         addSubview(view)
         
@@ -39,8 +39,8 @@ class LocationView: UIView {
     }
     
     func updateUI(with address: Address) {
-        self.address.text = address.street ?? "…"
-        city.text = address.area ?? "…"
+        self.address.text = address.street ?? .threeDots
+        city.text = address.area ?? .threeDots
     }
     
     private func configLabelsUI() {
@@ -49,7 +49,7 @@ class LocationView: UIView {
         city.font = Font.regularFont(size: .p12)
         city.textColor = .rgb255
         
-        address.text = "…"
-        city.text = "…"
+        address.text = .threeDots
+        city.text = .threeDots
     }
 }
