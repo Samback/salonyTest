@@ -47,9 +47,9 @@ class LocationView: UIView {
         spinner.activityIndicatorViewStyle = .white
     }
     
-    func updateUI(with address: Address) {
-        self.address.text = address.street ?? .threeDots
-        city.text = address.area ?? .threeDots
+    func updateUI(with address: Address?) {
+        self.address.text = address?.parameters?.street ?? .threeDots
+        city.text = address?.area?.name ?? .threeDots
     }
     
     func startSpinner() {
@@ -57,16 +57,19 @@ class LocationView: UIView {
         spinner.startAnimating()
         spinner.isHidden = false
         
-        UIView.animate(withDuration: 0.5, animations: { [unowned self] in
-            self.addButton.alpha = 0
-            self.spinner.alpha = 1.0
-        }) { flag in
-            if flag {
-                self.addButton.isHidden = true
-            }
-        }    }
+        UIView
+            .animate(withDuration: 0.5, animations: { [unowned self] in
+                self.addButton.alpha = 0
+                self.spinner.alpha = 1.0
+                }) { flag in
+                if flag {
+                    self.addButton.isHidden = true
+                }
+        }
+    }
     
     func stopSpinner() {
+        
         addButton.alpha = 0
         addButton.isHidden = false
         
@@ -78,17 +81,14 @@ class LocationView: UIView {
                 self.spinner.isHidden = true
                 self.spinner.startAnimating()
             }
-        }    }
-    
-    private func showSpinner(flag: Bool) {
-        
+        }
     }
+    
     private func configLabelsUI() {
         address.font = Font.boldFont(size: .p14)
         address.textColor = .rgb255
         city.font = Font.regularFont(size: .p12)
         city.textColor = .rgb255
-        
         address.text = .threeDots
         city.text = .threeDots
     }

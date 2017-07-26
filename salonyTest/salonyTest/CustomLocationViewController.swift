@@ -29,7 +29,7 @@ class CustomLocationViewController: ViewController {
         locationView.addButton.addTarget(self, action: #selector(tapOnAddButton), for: .touchUpInside)
     }
     
-    func updateUI(with address: Address) {
+    func updateUI(with address: Address?) {
         locationView.updateUI(with: address)
     }
     

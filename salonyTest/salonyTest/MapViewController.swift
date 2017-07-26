@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Rswift
 import GoogleMaps
+import BPStatusBarAlert
 
 final class MapViewController: ViewController {
     
@@ -19,32 +20,66 @@ final class MapViewController: ViewController {
     let mapViewController = GoogleMapViewController(position: .defaultPosition)
     let locationViewController = CustomLocationViewController()
     
+    fileprivate var currentAddress: Address?
+    fileprivate var currentPosition = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+    
+    fileprivate var inputAddress: Address {
+        if let currentAddress = currentAddress {
+            return currentAddress
+        } else {
+            return Address(coordinate: currentPosition)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        configMap()
+        configControllers()
     }
     
     private func configUI() {
         title = Messages.title.myAddress
     }
     
-    private func configMap() {
+    private func configControllers() {
         mapViewController.mapCenterHandler = { position in
-            print("New position \(position.target)")
+            DispatchQueue.main.async { [unowned self] in
+                self.locationViewController.startSpinner()
+            }
+            self.currentPosition = position.target
+            FetchAddressInfoController().address(with: position.target) { address, error in
+                DispatchQueue.main.async { [unowned self] in
+                    self.updateUI(with: address, error: error)
+                }
+            }
         }
         
         locationViewController.tapAction = {[unowned self] in
             guard let navigationController = self.navigationController else {
                 return
             }
+            
             PresentAddNewAddressViewControllerAction()
-                .execute(on: navigationController, with: Address(coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0)))
+                .execute(on: navigationController,
+                         with: self.inputAddress)
         }
         
         attachChildViewController(mapViewController, containerView: mapContainer)
         attachChildViewController(locationViewController, containerView: locationView)
+    }
+    
+    private func updateUI(with address: Address?, error: NSError?) {
+        currentAddress = address
+        locationViewController.updateUI(with: address)
+        locationViewController.stopSpinner()
         
+        if let error = error {
+            BPStatusBarAlert()
+                .message(message: error.localizedDescription)
+                .bgColor(color: .main)
+                .messageColor(color: .rgb255)
+                .show()
+        }
     }
 }
 
